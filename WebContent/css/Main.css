@@ -1,6 +1,11 @@
-﻿	.all {
-		margin:0 auto;
+﻿	body {
+		margin: 0;
 	}
+
+	.all {
+		margin: 0 auto;
+	}
+	
 	a {
 		text-decoration: none;
 		color:white;
