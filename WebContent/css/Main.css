@@ -29,8 +29,6 @@
 	a.line4{
 		position: relative;
 		padding: 0px 30px;
-		
-
 	}
 	p.title1 a{
 		color: white;
@@ -53,6 +51,23 @@
 		margin-top: 5px;
 		font-size: 17px;
 	}
+
+
+	.line2 ul li { /*클릭시 하위메뉴*/
+		display:none;
+		font-size: 14px;
+		background-color: red;
+		padding:10px;
+	}
+	nav ul li ul {
+		display :none;
+	}
+	#trigger:checked {
+		display: block;
+	}
+
+
+
 	.left_nav1 {
 		list-style: none;
 		margin:0;
@@ -67,6 +82,7 @@
 	}
 	
 	.right_nav1 {
+		display: block;
 		position: absolute;
 		right:20px;
 		display:block;
