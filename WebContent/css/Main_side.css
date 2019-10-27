@@ -1,70 +1,116 @@
-﻿	body {
-		margin: 0;
-	}
-	a {
-		text-decoration: none;
-		color:white;
-	}
-	.top {
-		width:100%;
-	}
-	header {
-		width:100%;
-		height:200px;
-		background-color: #4d6c8b;
-	}
-	.left_nav1 {
-		list-style: none;
-		margin:0;
-		padding:1px;
-		width:200px;
-		height:50px;
-	}
-	.left_nav1 li {
-		display:inline-block;
-		margin:5px 10px;
-	}
+﻿body {
+	margin: 0;
+}
+
+.all {
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color:#ccc;
+}
+a.line1{
+	border-right: 1px solid #5f7b97;
+	position: relative;
+	padding: 0px 20px;
+}
+a.line2{
+	position: relative;
+	padding: 0px 20px;
+
+}
+a.line3{
+	border-right: 1px solid #5f7b97;
+	position: relative;
+	padding: 0px 30px;
 	
-	.right_nav1 {
-		position: absolute;
-		right:20px;
-		display:block;
-		top:1px;
-	}
-	.right_nav1 li {
-		display:inline-block;
-		margin:5px 10px;
-	}
+}
+a.line4{
+	position: relative;
+	padding: 0px 30px;
 	
-	.title1 {
-		text-align: center;
-		font-size: 20px;
-	}
-	.title2 {
-		text-align: center;
-		font-size: 13px;
-		color:#a3bfdb;
-	}
-	.main_nav1 {
-		width:100%;
-		background-color: #4d6c8b;
-		text-align: center;
-		height:10px;
-	}
-	.main_nav1 li {
-		display:inline-block;
-		margin:5px 10px;
-		padding:10px 0;
-	}
-	.dir {/*메뉴에서 클릭하면 디렉토리 보여주기*/
-		background-color: #ccc;
-		padding : 8px 50px;
-		font-size: 12px;
-		height:20px;
-	}
-	.dir p {
-		margin:4px 0px 0px 140px;
-	}
+
+}
+p.title1 a{
+	color: white;
+}
+.top {
+	width:100%;
+}
+header {
+	width:100%;
+	height:230px;
+	background-color: #4d6c8b;
+}
+header div nav ul.topmenu{
+	margin-top: 5px;
+	font-size: 14px;
+	padding-inline-start: 10px;
+}
+
+header nav div ul.topmenu1{
+	margin-top: 5px;
+	font-size: 17px;
+}
+.left_nav1 {
+	list-style: none;
+	margin:0;
+	padding:1px;
+	width:200px;
+	height:50px;
+}
+.left_nav1 li {
+	display:inline-block;
+	color:white;
+	margin:5px 0px;
+}
+
+.right_nav1 {
+	position: absolute;
+	right:20px;
+	display:block;
+	top:1px;
+}
+.right_nav1 li {
+	display:inline-block;
+	color:white;
+	margin:5px 0px;
+}
+
+.title1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 5px ;
+	color:white;
+}
+.title2 {
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 5px ;
+	color:#a3bfdb;
+}
+.main_nav1 {
+	width:100%;
+	background-color: #4d6c8b;
+	text-align: center;
+	height:10px;
+}
+.main_nav1 li {
+	display:inline-block;
+	color:white;
+	margin:5px 0px;
+	padding:10px 0;
+}
+.dir {
+	background-color: #ccc;
+	padding : 8px 50px;
+	font-size: 12px;
+	height:20px;
+}
+.dir p {
+	margin:4px 0px 0px 140px;
+}
 	.left-sidebar {
 		width: 150px;
 		margin-bottom: 20px;
