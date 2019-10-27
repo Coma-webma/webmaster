@@ -111,7 +111,9 @@ header nav div ul.topmenu1{
 .dir p {
 	margin:4px 0px 0px 140px;
 }
-	.left-sidebar {
+
+
+	.left-sidebar { /*사이드메뉴시작*/
 		width: 150px;
 		margin-bottom: 20px;
 		margin-right: 20px;
