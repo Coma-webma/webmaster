@@ -1,7 +1,7 @@
-﻿	body {
-		margin: 0;
-	}
-
+﻿html, body {
+	margin: 0;
+	height: 100%;
+}
 	.all {
 		margin: 0 auto;
 	}
@@ -40,7 +40,7 @@
 	}
 	header {
 		width:100%;
-		height:230px;
+		height:210px;
 		background-color: #4d6c8b;
 	}
 	header div nav ul.topmenu{
@@ -117,10 +117,36 @@
 		margin:0 auto;
 		border: 1px solid #ccc;
 	}
-	.comment1 {
-		width:100%px;
+	.revious_next { /*이전 다음*/
+		width:100%;
+		height:45px;
+		border: 1px solid #ccc;
+	}
+	.revious_next_right {
+		height:40px;
+		float: right;
+	}
+	.revious {
+		width:70px;
+		height:40px;
+		border: 1px solid #ccc;
+		display: inline-block;
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.next {
+		width:70px;
+		height:40px;
+		border: 1px solid #ccc;
+		display: inline-block;
+		text-align: center;
+		padding-bottom: 5px;
+	}
+
+	.comment1 {/*댓글시작*/
+		width:96%;
 		height:140px;
-		border:1px solid red;
+		border:1px solid #ccc;
 		padding-top:20px;
 		padding-left:40px;
 	}
