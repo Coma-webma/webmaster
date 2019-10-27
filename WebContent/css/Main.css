@@ -74,7 +74,17 @@
 	.dir p {
 		margin:4px 0px 0px 140px;
 	}
-	
+	.left-sidebar {
+		width: 150px;
+		float: left;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.contents {
+		width: 490px;
+		float: left;
+		margin-bottom: 20px;
+	}
 	.middle {
 		width:1000px;
 		margin:0 auto;
@@ -83,7 +93,7 @@
 	.comment1 {
 		width:100%px;
 		height:140px;
-		border:1px solid red;
+		border:1px solid #ccc;
 		padding-top:20px;
 		padding-left:40px;
 	}
@@ -110,8 +120,42 @@
 		margin-top:10px;
 		margin-left:840px;
 	}
-
 	.comment1_button button {
 		padding : 10px;
 	}
-	
+
+	.comment1_list {
+		width:100%px;
+		padding-top:20px;
+		padding-left:40px;
+		border: 1px solid red;
+	}
+	.comment1_list1 {
+		display : block;
+	}
+	.comment1_list1 {
+		vertical-align:top;
+		display: inline-block;
+		width: 80px;
+		height:80px;
+		border:1px solid blue;
+	}
+	.comment1_list1_name {
+		vertical-align:top;
+		display: inline-block;
+		height:20px;
+		padding-left:40px;
+		border:1px solid yellow;
+	}
+	.comment1_list1_time {
+		vertical-align:top;
+		display: inline-block;
+		height:20px;
+		padding-left:40px;
+		border:1px solid yellow;
+	}
+	.comment1_list_content {
+		border:1px solid green;
+		display: inline-block;
+	}
+
