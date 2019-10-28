@@ -2,7 +2,7 @@
         .a8{
             font-size:1.4em;
             display:block;
-            margin-left:15px;
+            margin-left:45px;
         }
         .a9{
             border-bottom:1px solid black;
@@ -36,7 +36,10 @@
             text-align:right;
             padding-right:30px;
         }
-        .a15{
-            width:90px;
-            float:right;
+        .a16{
+            width:40px;
+            height:40px;
+            float:left;
+            background-size:25px;
         }
+
