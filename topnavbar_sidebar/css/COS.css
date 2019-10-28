@@ -1,0 +1,42 @@
+
+        .a8{
+            font-size:1.4em;
+            display:block;
+            margin-left:15px;
+        }
+        .a9{
+            border-bottom:1px solid black;
+            width:900px;
+            height:80px;
+            line-height:60px;
+            text-align: left;
+        }
+        .a10{
+            font-size:1em;
+            float:left;
+            margin-left:15px;
+        }
+        .a11{
+            font-size:1em;
+            float:right;
+        }
+        .a12{
+            width:900px;
+            height:30px;
+            background-color:rgb(245, 243, 243);
+            border-bottom:1px solid rgb(190, 188, 188);
+            line-height:30px;
+            font-size:0.8em;
+        }
+        .a13{
+            text-align:left;
+        }
+        .a14{
+            width:60px;
+            text-align:right;
+            padding-right:30px;
+        }
+        .a15{
+            width:90px;
+            float:right;
+        }
