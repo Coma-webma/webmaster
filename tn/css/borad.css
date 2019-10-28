@@ -1,0 +1,40 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+#main{
+    position: relative;
+}
+
+#main > .head{
+    background-color:  #4d6c8b;
+}
+
+#main > .head header{
+    position: relative;
+    text-align: center;
+    z-index: 14;
+}
+p >.title{
+    font-size: 28.8px;
+}
+p.subtitle{
+    padding: 0px 0px;
+}
+
+p.subtitle small{
+    color: #a3bfdb;
+    font-size: 1.1em;
+    padding: 0px 10px;
+}
+p.title a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.4em;
+
+}
+a:link, a:visited a:focus{
+    color: #fff;
+}
+
