@@ -40,13 +40,12 @@ ul{
     left:10px;
     top:0;
     font-size: 12px;
-    padding-left: 5px;
+    padding-left: 7px;
     z-index: 1000;
 }
 #to_home{
     padding-right: .5em;
     font-size: 1.1em;
-    margin-top: .9em;
 }
 #left_nav #to_home a{
     color: #ccc;
