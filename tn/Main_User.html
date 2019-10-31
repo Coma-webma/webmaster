@@ -18,35 +18,119 @@
 				</ul>
 			</nav>
 			<nav class="right_nav1">
-				<ul  class="topmenu">
-					<li id="aaa"><span  class="line1">내컨텐츠</span></li>
 					<script>
-						$(function(){
-							$(".line1").on("click",function(){
-								$('li#aaa').addClass('selected');
-								$('li#b').removeClass('selected');
-								return false;
+							$(function(){
+								$("#a").on("click",function(){
+									$('li#a').addClass('selected');
+									$('li#b').removeClass('selected');
+									$('li#c').removeClass('selected');
+									$("div#act_submenu").css("display","none");
+									return false;
+								});
+								$("#b").on("click",function(){
+									$('li#b').addClass('selected');
+									$('li#a').removeClass('selected');
+									$('li#c').removeClass('selected');
+									$("div#act_submenu").css("display","block");
+									$("div#Niname_submenu").css("display","none");
+            						
+									return false;
+								});
+								$("#c").on("click",function(){
+									$('li#c').addClass('selected');
+									$('li#a').removeClass('selected');
+									$('li#b').removeClass('selected');
+									$("div#act_submenu").css("display","none");
+									$("div#Niname_submenu").css("display","block");
+									return false;
+								});
+								$('body').on("click",function(){
+									$('li#c').removedClass('selected');
+									$('li#a').removeClass('selected');
+									$('li#b').removeClass('selected');
+									$("div#act_submenu").css("display","none");
+								});
 							});
-						});
-						$(function(){
-							$(".line2").on("click",function(){
-								$('li#b').addClass('selected');
-								$('li#aaa').removeClass('selected');
-								return false;
-							});
-						});
-					</script>
-					<li id="b"><a class="line2" href=#>참여활동</a></li>
-					<li>
-							<label for="trigger"><a class="line2" href=#>닉네임</a></label>
-						<ul>
-							<li>관리자</li>
-							<li>로그아웃</li>
-						</ul>
-					</li>
-						
-				</ul>
-			</nav>
+							
+						</script>
+				<ul  class="topmenu">
+			<li id="a"><span  class="line1">내컨텐츠</span>
+			<div id="submenu"></div>
+			
+			</li>
+			<li id="b"><span class="line1" href=#>참여활동</span>
+			<div id="act_submenu" class="submenu layerbox" style="display: none;">
+				<div class="pin pin_top"></div>
+			<table>
+				<thead>
+					<tr>
+						<th class="study">
+							<span class="inner">공동공부</span>
+						</th>
+						<th class=marking>
+							<span class="inner">봤어요</span>
+							<span class="subtitle">
+						누적봤어요	<span class="count">1</span>번
+							</span>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="study">
+					<div id="p_study_nest" class="scrollbox">
+						<menu class="menu">
+							<li>
+								<a href="#">듣고있는 것</a>
+								<div class="archieved">
+									<span class="percentage">&nbsp;15%</span>
+									<span class="graph">
+										<span class="bar" style="width: 15%;"></span>
+									</span>
+								</div>
+							</li>
+							<li>
+									<a href="#">듣고있는 것</a>
+									<div class="archieved">
+										<span class="percentage">&nbsp; 50%</span>
+										<span class="graph">
+											<span class="bar" style="width: 50%;"></span>
+										</span>
+									</div>
+								</li>
+						</menu>
+					</div>
+				</td>
+				<td class="marking">
+					<div id="p_marking_nest" class=scrollbox>
+						<menu class="menu2">
+							<li>
+								<a href="#">듣고있는것의 코스이름</a>
+							</li>
+							<li>
+									<a href="#">듣고있는것의 코스이름</a>
+								</li>
+						</menu>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	</li>
+	<li id="c"><span class="line2" href=#>닉네임</span>
+	<div id="Niname_submenu" class="submenu layerbox" style="display: block;">
+		<div class="pin pin_top"></div>
+		<div class="table">
+			<menu>
+				<li><a href="#">관리자</a></li>
+				<li><a href="#">로그아웃</a></li>
+			</menu>
+		</div>
+	</div>
+	</li>
+		</ul>
+	</nav>
 		</div>
 			<div class="title_main">
 				<p class="title1"><a cass="mainboard" href="Main.html">웹 마스터</a></p><!-- 줄간격 해야함 -->
