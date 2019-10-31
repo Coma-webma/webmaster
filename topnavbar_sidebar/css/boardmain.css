@@ -7,7 +7,6 @@ header{
     height:55px;
     background-color: #34495e;
 }
-
 a {
 text-decoration: none;
 color:#ccc;
@@ -81,6 +80,16 @@ color:#ccc;
 float:left;
 text-align: center;
 }
+.menu_name1{
+position: relative;
+display: block;
+line-height: 60px;
+width: 70px;
+height: 65px;
+color: #3c9 ;
+float:left;
+text-align: center;
+}
 .menu_all{
 width:255px;
 height:50px;
@@ -112,9 +121,6 @@ margin: 13px 0px 0px 0px;
 cursor: pointer;
 width: 35px;
 }
-li a.active span{
-color: #3c9 ;
-}
 select.sel{
  background-color: #bbb;
  color: white;
@@ -128,3 +134,4 @@ li a:hover:not(.active) {
 background-color: #555;
 color: white;
 }
+
