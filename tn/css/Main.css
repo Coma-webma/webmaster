@@ -169,60 +169,6 @@
 		padding : 10px;
 	}
 	
-	.menubar li a{
-	color:#cccccc;
-	display:block;
-	font-weight:normal;
-	text-align:center;
-	text-decoration:none;
-	}
-	.menubar li a:hover, .menubar ul li:hover a{
-	color:#FFF;
-	text-decoration:none;
-	}
-	.menubar li ul{
-	display:none;
-	height:auto;
-	padding: 5px 5px;
-	margin: 2px;
-	border:0px;
-	position:absolute;
-	width:200px;
-	z-index:200;
-	
-	}
-	.menubar li:hover ul{
-	display:block; 
-	}
-	.menubar li li {
-	background: white;
-	display:block;
-	float:none;
-	margin:0px;
-	padding:0px;
-	width:200px;
-	}
-
-	.menubar li:hover li a{
-	background:none;
-	}
-
-	.menubar li ul a{
-	display:block;
-	height:30px;
-	font-size:12px;
-	font-style:normal;
-	margin:0px;
-	padding:10px 10px 0px 15px;
-	text-align:left; 
-	color:black;
-	}
-	
-	.menubar li ul a:hover, .menubar li ul li:hover a{
-	background: #bbb;
-	border:0px;
-	text-decoration:none;
-	}
 	 menu > li > a{
 		color: black;
 	}
@@ -280,7 +226,8 @@ div#act_submenu table thead th:first-child, div#my_submenu table thead th:first-
 div#act_submenu table thead th, div#my_submenu table thead th {
     width: 50%;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 36px;
 }
 div#act_submenu table thead th .subtitle, div#my_submenu table thead th .subtitle {
     color: #666;
@@ -327,6 +274,7 @@ div#act_submenu table tbody td div#p_study_nest menu li,  div#activity_submenu t
 	padding-left: 10px;
     line-height: 30px;
 }
+
 div#act_submenu table tbody td div#p_study_nest menu li a, div#my_submenu table tbody td div#p_study_nest menu li a {
     background-image: none;
     color: #000;
@@ -401,12 +349,17 @@ span.bar {
 }
 li.selected > span{
 	color: white;
-} /*참여활동*/
+} 
+
+menu > li:hover{
+	background-color: #f8f8f8;
+}
+/*참여활동*/
 
 li.selected div.submenu {
     display: block;
 }
-div#Niname_submenu {
+div#niName_submenu {
     right: 0;
     width: 85px;
 }
@@ -416,12 +369,32 @@ div#Niname_submenu {
     text-align: left;
     border: 1px solid #ccc;
 }
-div#Niname_submenu div.pin {
+div#niName_submenu div.pin {
     left: 25px;
 }
-menu >li > a{
-	width: 35px;
+
+div.table > menu >li > a:hover{
+	background-color: #eee;
 }
-menu >li > a:hover{
-	background-color: #ccc;
+div#niName_submenu div.table menu li a {
+    color: #000 !important;
+    display: block;
+    font-size: 13px;
+    height: 2em;
+    line-height: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+div.table > menu >li{
+	width: 83px;
+
+}
+div.table > menu{
+	padding-inline-start: 0px;
+}
+ menu.menu >li , menu.menu2 > li{
+	margin: 0px 0px 5px;
+ }
