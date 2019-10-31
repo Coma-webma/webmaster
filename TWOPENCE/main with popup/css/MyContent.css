@@ -1,0 +1,226 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 표 테두리 보려고 임시로 지정 */
+/* .temporary { border-collapse:collapse; } */
+/* .temporary th, .temporary td { border:1px solid black; } */
+
+.submenu{
+    display:none;
+    position:absolute !important;
+    top:40px;
+    right:-7px;
+    -moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);
+    -o-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
+    box-shadow:0 0 5px rgba(0,0,0,0.3)
+}
+
+.submenu table, .submenu .table {
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+#right_nav{
+    position:absolute;
+    right:14px;
+    top:0;
+    z-index:1000;
+    height:35px;
+    line-height:12px;
+}
+
+#right_nav>ul>li{
+    display:block;
+    float:right;
+    position:relative;
+    height:35px;
+    line-height:35px;
+}
+
+#right_nav>ul>li#activity>span{
+    border-left:1px solid #5f7b97;border-right:1px solid #5f7b97
+}
+
+#right_nav>ul>li>span.title,#right_nav>ul>li a{
+    color:#ccc;
+    cursor:pointer;
+    font-size:12px;
+    padding:0 10px;
+    position:relative;
+    vertical-align:middle;
+    z-index:101
+}
+
+#right_nav>ul>li>span.title:hover,#right_nav>ul>li a:hover{
+    color:#fff
+}
+
+#right_nav>ul>li>a.title{
+    color:#ccc;
+    cursor:pointer;
+    display:block;
+    font-size:12px;
+    height:35px;
+    line-height:35px;
+    padding-left:10px;
+    padding-right:10px
+}
+
+#right_nav>ul>li a{color:#d4d4d4}
+
+#right_nav>ul>li.selected>a.title{
+    color:#fff
+}
+
+#right_nav>ul>li.selected>span.title{
+    color:#fff
+}
+
+#right_nav>ul>li.selected div.submenu{
+    display:block;
+}
+
+/* div#activity_submenu, */
+div#my_content_submenu {
+    width:530px;
+}
+
+/* div#activity_submenu div.pin, */
+div#my_content_submenu div.pin{
+    left:480px
+}
+
+/* div#activity_submenu table, */
+div#my_content_submenu table {
+    width: 100%;
+    height: 100%;
+}
+
+div#my_content_submenu table thead th {
+    width: 50%;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+div#my_content_submenu table thead th:first-child{
+    border-right:1px solid #ccc
+}
+
+div#my_content_submenu table thead th .controls a {
+    font-size: .95em;
+    margin: 0 0 0 1px;
+    padding: 4px 6px;
+    font-weight: normal;
+}
+
+div#my_content_submenu table thead th span.inner {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 15px;
+    color: #000;
+}
+
+div#my_content_submenu table thead th .controls {
+    float: right;
+    line-height: 39px;
+    padding-right: 6px;
+    margin-top: -1px;
+}
+
+div#my_content_submenu table thead th .controls a {
+    font-size: .95em;
+    margin: 0 0 0 1px;
+    padding: 4px 6px;
+    font-weight: normal;
+}
+
+div#my_content_submenu table thead th .controls a.add {
+    background-color: #eee;
+    color: #666 !important;
+}
+
+div#my_content_submenu table thead th .controls a.setting {
+    background-color: #eee;
+    color: #666 !important;
+}
+
+/* div#activity_submenu table tbody td,  */
+div#my_content_submenu table tbody td{
+    vertical-align:top;
+    width:50%
+}
+
+div#my_content_submenu table tbody td:first-child {
+    border-right: .1em solid #ddd;
+}
+
+div#my_content_submenu table tbody td div#p_course_nest ul {
+    display:block;
+    width: 250px;
+}
+
+div#my_content_submenu table tbody td div#p_course_nest ul li {
+    border-bottom: 1px solid #eee;
+    border-right: 0;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+
+div#my_content_submenu table tbody td div#p_course_nest ul li a {
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div#my_content_submenu table tbody td div#p_module_nest menu li a {
+    color: #777;
+    /* display: block; */
+    background-image: url(../../img/desktop/list_bullet_01.gif);
+    background-repeat: no-repeat;
+    background-position: left 8px;
+    padding-left: 1em;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div#my_content_submenu table tbody td div#p_module_nest .divider {
+    color: #000;
+    padding-left: 1em;
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
+
+/* div#activity_submenu table tbody td */
+/* div#p_course_nest ul li, */
+div#my_content_submenu table tbody td div#p_course_nest ul li{
+    border-bottom:1px solid #eee;
+    border-right:0;
+    vertical-align:middle;
+    padding:0 
+    15px
+}
+
+div#my_content_submenu table tbody td div#p_module_nest menu {
+    list-style-type: none;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+div#my_content_submenu table tbody td div#p_module_nest menu li {
+    list-style-type: none;
+    padding-left: 1em;
+    line-height: 2em;
+}
