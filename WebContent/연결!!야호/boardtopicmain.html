@@ -1,0 +1,127 @@
+<link href="css/boardmain.css" rel="stylesheet" type="text/css">
+<link href="css/topic_add.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="resize/plugin.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>모듈메인</title><!-- <%=모듈의 이름 %>-->
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="admin_left_nav">
+                    <ul class="topmenu">
+                        <li><a  class=line1 href="COMA.html">COMA</a></li>
+                        <li><a  class=line2 href=#>전체메뉴</a></li>
+                    </ul>
+            </nav>
+            <nav class="admin_right_nav">
+            <ul class="topmenu">
+                    <li><a  class=line1 href=#>내컨텐츠</a></li>
+                    <li><a  class=line1 href=#>참여활동</a></li>
+                    <li><a  class=line2 href=#>닉네임</a></li><!--<%= U_Nicname%>-->
+            </ul>
+        </nav>
+    </div>
+    </header >
+    <div id=contant>
+        <div>
+        <nav id=main>
+         <ul class=admin_menu>
+            <li><a class="active" href="boardtopicmain.html"><span class="menu_name ">모듈</span></a></li>
+            <li><a href="boardcoursemain.html"><span class="menu_name">코스</span></a></li>
+            <li><a href="boardAccount.html"><span class="menu_name">계정</span></a></li>
+            </ul>
+        </nav>
+        <nav>
+        <ul class="menu_all">
+            <li class="menu_all_add"><p>전체 모듈 목록</p></li>
+            <button  class="button1"><a href="boardtopic.html" style="color: white">추가</a></button>
+            <select class="sel" name="latest">
+            <option value="low">최신순</option>
+            <option value="low">내림차순</option>
+            <option value="up">오름차순</option>
+            </select>
+        </ul>    
+        <nav id="main_bar">
+            <ul class="main_bar_all">
+                    <a href="boardtopicmodify.html"><li>토픽1</li></a>
+                    <ul>
+                        <a href="boardtopicmodify.html"><li>- 토픽 1-1</li></a>
+                        <a href="boardtopicmodify.html"><li>- 토픽 1-2</li></a>
+                    </ul>
+                <a href="#" class="a1"><li>토픽2</li></a>
+                <a href="#" class="a1"><li>토픽3</li></a>
+                <a href="#" class="a1"><li>토픽4</li></a>
+            </ul>
+        </nav>
+    </div><!-- 관리자모드 메인 -->
+<article>
+    <div class="a16"><img src="img/picture01.jpg" width=35px; heigth="35px"></div>
+    <span class="a8"><p>모듈 전체</p></span>
+    <div class="a9">
+        <p class="a10">선택된 항목을
+        <select>
+            <option value="top">선택한 항목에 대한 작업</option>
+            <option value="low">공개</option>
+            <option value="up">비공개</option>
+        </select>
+        </p>
+        <p class="a11">
+            <label><input type="checkbox" value="공개" checked>공개</label>
+            <label><input type="checkbox" value="비공개" checked>비공개</label>
+        </p>
+   </div>
+   <table class="a12">
+        <thead>
+            <tr>
+                <th class="chk"><input type="checkbox"></th>
+                <th class="main_img">대표이미지</th>
+                <th class="detail">모듈명</th>
+                <th class="topic">토픽수</th>
+                <th class="public">공개</th>
+                <th class="date">최종변경일</th>
+            </tr>
+        </thead>
+        <tbody class="border1">
+            <tr>
+                <td class="chk"><input type="checkbox"></td>
+                <td class="main_img">대표이미지</td>
+                <td class="detail"><a href="boardtopicmodify.html"><strong>토픽1</strong></a></td>
+                <td class="topic">2</td>
+                <td class="public">●</td>
+                <td class="date">2019-10-30</td>
+            </tr>
+            <tr>
+                <td class="chk"><input type="checkbox"></td>
+                <td class="main_img">대표이미지</td>
+                <td class="detail"><a href="boardtopicmodify.html"><strong>토픽2</strong></a></td>
+                <td class="topic">1</td>
+                <td class="public">●</td>
+                <td class="date">2019-10-30</td>
+            </tr>
+            <tr>
+                <td class="chk"><input type="checkbox"></td>
+                <td class="main_img">대표이미지</td>
+                <td class="detail"><a href="#"><strong>토픽3</strong></a></td>
+                <td class="topic">3</td>
+                <td class="public">○</td>
+                <td class="date">2019-10-30</td>
+            </tr>
+            <tr>
+                <td class="chk"><input type="checkbox"></td>
+                <td class="main_img">대표이미지</td>
+                <td class="detail"><a href="#"><strong>토픽4</strong></a></td>
+                <td class="topic">2</td>
+                <td class="public">●</td>
+                <td class="date">2019-10-30</td>
+            </tr>
+
+        </tbody>
+   </table>
+</article>
+</body>
+</html>
