@@ -1,0 +1,36 @@
+.header{
+    padding-right:30px;
+    text-align: right;
+    margin-top:10px;
+    font-size:1.3em;
+    color:black;
+}
+.main {
+    width: 100%;
+}
+#table{
+    padding-right:5%;
+}
+#table1{
+    padding-left:40.5%;
+    padding-right:5%;
+}
+#table2{
+    padding-left:40.5%;
+    padding-right:5.5%;
+}
+#table3{
+    padding-right:5.5%;
+}
+a:active{
+    color:black;
+}
+a{
+    text-decoration: none; 
+}
+a:visited{
+    color:black;
+}
+a:link{
+    color:black;
+}
