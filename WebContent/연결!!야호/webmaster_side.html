@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="css/Main_side.css" rel="stylesheet" type="text/css">
+<link href="css/webmaster_side.css" rel="stylesheet" type="text/css">
 <link href="css/font.css" rel="stylesheet" type="text/css">
 <link href="css/together_study.css" rel="stylesheet" type="text/css">
+	<!--공동공부 script-->
+	<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+	<script>
+		$(function(){
+			$(".dir_main_img").on("click",function(){
+				$("#popup_together").css("display","block");
+			});
+		});
+		$(function(){
+			$(".close").on("click",function(){
+				$("#popup_together").css("display","none");
+			});
+		})
+	</script>
 <meta charset="UTF-8">
-<title>웹 마스터</title>
+<title>웹 마스터_사이드</title>
 </head>
 <body>
 <div class="top">
@@ -158,7 +172,7 @@
 				</div>
 			</div>
 	<!--공동 공부 팝업-->
-	<div class="popup" id="popup_together" style="width: 980px; height: 500px;">
+	<div class="popup" id="popup_together" style="width: 980px; height: 500px; left: 20%; display: none;">
 		<div class="wrapper">
 			<div class="header">
 				<strong>공동공부</strong>
@@ -185,24 +199,59 @@
 						 style="overflow: hidden; position: relative; left: -0.4px;">
 							<desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc>
 							<defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+							<!--가로줄-->
 							<path fill="none" stroke="#dddddd" d="M0,0L12100,0" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
 							<path fill="none" stroke="#dddddd" d="M0,25L12100,25" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
 							<path fill="none" stroke="#dddddd" d="M0,50L12100,50" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,50L12100,50" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,75L12100,75" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,100L12100,100" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,125L12100,125" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,150L12100,150" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,175L12100,175" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,200L12100,200" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,225L12100,225" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,250L12100,250" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,275L12100,275" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,300L12100,300" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,325L12100,325" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,350L12100,350" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,375L12100,375" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,400L12100,400" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,425L12100,425" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<path fill="none" stroke="#dddddd" d="M0,450L12100,450" stroke-dasharray="3,1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+							<!--세로줄(rect), 원(circle)-->
+							<rect x="60" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+
+							<rect x="120" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<circle cx="120" cy="25" r="5" fill="#93c8e0" stroke="#93c8e0" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+							<rect x="180" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<circle cx="180" cy="25" r="5" fill="#93c8e0" stroke="#93c8e0" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+							<circle cx="180" cy="50" r="5" fill="#93c8e0" stroke="#93c8e0" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+							<rect x="240" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<circle cx="240" cy="50" r="5" fill="#93c8e0" stroke="#93c8e0" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+							<rect x="300" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<rect x="360" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<rect x="420" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<rect x="480" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<rect x="540" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+							<rect x="600" y="0" width="0.5" height="800" r="0" rx="0" ry="0" fill="#dcdcdc" stroke="#000" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
 						</svg>
+						<button class="join" style="top: 111px; left: 35px;">참여</button>
 					</div>
 				</div>
 				<div class="x_bar" style="width:460;">
 					<ul style="width: 12160px;">
-						<li class="dummy" style="width: 20px;"></li>
-						<li style="width: 60px;">
+						<li class="dummy" style="width: 30px;"></li>
+						<li style="width: 55px;">
 							<strong>You</strong>
 						</li><!--변경-->
-						<li style="width: 60px;">기현</li>
-						<li style="width: 60px;">나현</li>
-						<li style="width: 60px;">태경</li>
-						<li style="width: 60px;">수빈</li>
-						<li style="width: 60px;">유하</li>
-						<li style="width: 60px;">찬성</li>
+						<li style="width: 55px;">기현</li>
+						<li style="width: 55px;">나현</li>
+						<li style="width: 55px;">태경</li>
+						<li style="width: 55px;">수빈</li>
+						<li style="width: 55px;">유하</li>
+						<li style="width: 55px;">찬성</li>
 					</ul>
 				</div>
 				<div class="goodjob_guys" style="width:159px">
@@ -212,7 +261,7 @@
 					<div class="good_wrap" style="height: 406px;">
 						<ul>
 							<li>
-								<img class="user_pic" src="user_pic.png" width="32" height="32" alt>
+								<img class="img/user_pic" src="user_pic.png" width="32" height="32" alt>
 								<strong>기현</strong>
 								<small><time>2019-10-31 17:41:30 </time></small>
 							</li>
@@ -245,5 +294,10 @@
 					</div>
 				</div>
 			</div>
-</body>
+			<div class="foot">
+				<button class="close">닫기</button>
+			</div>
+		</div>
+	</div>
+	</body>
 </html>
