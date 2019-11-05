@@ -30,8 +30,8 @@
 			$("div#niName_submenu").css("display","block");
 			return false;
 		});
-		$('body#body').on("click",function(){
-			$('li#c').removedClass('selected');
+		$('html').click(function(){
+			$('li#c').removeClass('selected');
 			$('li#a').removeClass('selected');
 			$('li#b').removeClass('selected');
 			$("div#act_submenu").css("display","none");

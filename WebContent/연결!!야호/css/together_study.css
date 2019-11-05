@@ -1,6 +1,5 @@
 /*공동공부 팝업 관련 CSS*/
 div#popup_together{
-    display: none;/*공동공부 팝업 가리개*/
     top: 155px;
     background-color: #fff;
     z-index: 15;
@@ -150,4 +149,34 @@ img.user_pic{
     position: absolute;
     left: 3px;
     top:8px;
+}
+button.join{
+    border: 1px solid #158bdc;
+    background-color: #fff;
+    color: #158bdc;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 28px;
+    padding: 0;
+    position: absolute;
+    border-radius: 3px
+}
+.close{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: url(../img/cancel.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    font-size: 1px;
+    text-indent: -600%;
 }
