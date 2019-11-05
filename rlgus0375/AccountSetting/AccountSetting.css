@@ -150,9 +150,6 @@ hgroup {
     font-size: 1.0em;
     margin-left: 200px;
 }
-.emphasis {
-    background-color: #3c9;
-}
 .inner{
     padding-top: 15px;
 }
@@ -194,13 +191,7 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-.go-to-top {
-    left: 85em;
-    top: 10em;
-    z-index: 5;
-    border: .1em solid #ddd;
-    padding: 1em;
-}
+
 .a {
     color: #666;
 }
