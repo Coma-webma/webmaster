@@ -38,7 +38,20 @@
 			$("div#niName_submenu").css("display","none");
 		});
 	});
-	
+
+	function popup(url, w, h, name, option) {
+    var pozX, pozY;
+    var sw = screen.availWidth;
+    var sh = screen.availHeight;
+    var scroll = 0;
+    if (option == 'scroll') {
+        scroll = 1;
+    }
+    pozX = (sw - w) / 2;
+    pozY = (sh - h) / 2;
+    window.open(url, name, "location=0,status=0,scrollbars=" + scroll + ",resizable=1,width=" + w + ",height=" + h + 
+    ",left=" + pozX + ",top=" + pozY);
+}
 </script>
 <meta charset="UTF-8">
 <title>웹 마스터</title>
@@ -55,6 +68,7 @@
 			</nav>
 			<nav class="right_nav1">
 				<ul  class="topmenu">
+			<li><a href="dec.html" class="line1" onclick="popup(this.href,620,500,'scroll'); return false;" >신고하기</a></li>
 			<li id="a"><span  class="line1">내컨텐츠</span>
 			<div id="submenu"></div>
 			</li>
@@ -133,7 +147,7 @@
 	</nav>
 		</div>
 			<div class="title_main">
-				<p class="title1"><a cass="mainboard" href="webmaster.html">웹 마스터 1</a></p><!-- 줄간격 해야함 -->
+				<p class="title1"><a href="webmaster.html">웹 마스터 1</a></p><!-- 줄간격 해야함 -->
 				<p class="title2">Web Master</p>
 			</div>
 		<nav class="main_nav1 menubar">
