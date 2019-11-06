@@ -1,0 +1,17 @@
+- 코스
+c_user_email(코스 유저 이메일), c_title(코스 제목), c_summary(코스 요약), c_public(코스 공개 여부), c_conn(코스 연결 여부)
+
+- 신고하기
+r_user_email(피의자 이메일), r_user_nickname(피의자 별명), r_title(피의자 제목), r_date(신고날짜), r_adminchk(신고 확인 여부), r_limit, r_suspect
+(피의자)
+
+- 토픽
+t_user_email(토픽 유저 이메일), t_title(토픽 제목), t_content(토픽 내용), t_summary(토픽 요약), t_public(토픽 공개 여부), t_prepare(토픽 준비 여부)
+
+- 회원유저
+u_email(유저 이메일), u_nickname(유저 별명), u_pass(유저 비밀번호), u_email_chk(유저 이메일 확인 여부), u_img(유저 프로필 이미지), u_info(유저소개), u_leave(탈퇴여부), u_count(유저제재횟수)
+
+- 모듈
+m_user_email(모듈 유저 이메일), m_title(모듈 제목), m_content(모듈 내용), m_summary(모듈 요약), m_public(모듈 공개 여부), m_notice(모듈 알림), m_together_title(모듈 공동 제목), 
+m_view_title, m_cover(모듈 커버 이미지), m_licence
+

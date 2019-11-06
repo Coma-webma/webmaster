@@ -1,0 +1,62 @@
+- 코스
+CREATE TABLE course (
+	idx int auto_increment primary key, 
+	c_user_email VARCHAR(20) NOT NULL,
+	c_title VARCHAR(20) NOT NULL,
+	c_summary CHAR(5) NULL DEFAULT '0',
+	c_public CHAR(5) NULL DEFAULT '0',
+	c_conn CHAR(5) NULL DEFAULT '0',
+	
+)
+
+- 신고
+CREATE TABLE report (
+	idx int auto_increment primary key, 
+	r_user_email VARCHAR(20) NOT NULL,
+	r_user_nickname VARCHAR(20) NOT NULL,
+	r_title VARCHAR(20) NOT NULL,
+	r_date datetime default now(),
+	r_adminchk ENUM('미확인','확인') NULL DEFAULT NULL,
+	r_limit INT(10) NULL DEFAULT NULL,
+	r_suspect VARCHAR(20) NULL DEFAULT NULL,
+	
+)
+
+- 토픽 
+CREATE TABLE topic (
+	idx int auto_increment primary key, 
+	t_user_email VARCHAR(20) NOT NULL,
+	t_title VARCHAR(20) NOT NULL,
+	t_content VARCHAR(500) NOT NULL,
+	t_summary VARCHAR(500) NOT NULL,
+	t_public CHAR(5) NULL DEFAULT '0',
+	t_prepare CHAR(5) NULL DEFAULT '0'
+)
+
+- 회원유저
+CREATE TABLE user (
+	idx int auto_increment primary key, 
+	u_email VARCHAR(20) NOT NULL,
+	u_nickname VARCHAR(20) NOT NULL,
+	u_pass VARCHAR(20) NOT NULL,
+	u_email_chk ENUM('미알림','알림') NULL DEFAULT NULL,
+	u_img CHAR(5) NULL DEFAULT '0',
+	u_info VARCHAR(200) NOT NULL,
+	u_leave ENUM('탈퇴가능','탈퇴불가능') NULL DEFAULT NULL,
+	u_count INT(5) NULL DEFAULT '0'
+)
+
+- 모듈
+CREATE TABLE module (
+	idx int auto_increment primary key, 
+	m_user_email VARCHAR(20) NOT NULL,
+	m_title VARCHAR(20) NOT NULL,
+	m_content VARCHAR(20) NOT NULL,
+	m_summary VARCHAR(200) NOT NULL,
+	m_public CHAR(5) NOT NULL,
+	m_notice CHAR(5) NOT NULL,
+	m_togeher_title CHAR(10) NOT NULL,
+	m_view_title CHAR(10) NOT NULL,
+	m_cover CHAR(5) NULL DEFAULT '0',
+	m_licence CHAR(5) NULL DEFAULT '0'
+)
