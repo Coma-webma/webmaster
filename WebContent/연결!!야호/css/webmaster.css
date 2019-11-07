@@ -30,6 +30,10 @@ span:hover{
 	cursor: pointer;
 }
 
+a.line1:hover, a.line2:hover{
+	color: white;
+	cursor: pointer;
+}
 a.line1{
 	border-right: 1px solid #5f7b97;
 	position: relative;
@@ -97,7 +101,7 @@ nav ul li ul {
 .left_nav1 li {
 	display:inline-block;
 	color:white;
-	margin:0px 0px 5px;
+	margin:6px 0px;
 }
 
 .right_nav1 {
@@ -110,10 +114,9 @@ nav ul li ul {
 .right_nav1 li {
 	display:inline-block;
 	color:white;
-	margin:0px 0px 5px;
-    position: relative;
-    height: 35px;
-    line-height: 35px;
+	margin:5px 0px;
+   
+    
 }
 
 .title1 {
