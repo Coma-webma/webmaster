@@ -97,7 +97,7 @@ nav ul li ul {
 .left_nav1 li {
 	display:inline-block;
 	color:white;
-	margin:5px 0px;
+	margin:0px 0px 5px;
 }
 
 .right_nav1 {
@@ -110,7 +110,7 @@ nav ul li ul {
 .right_nav1 li {
 	display:inline-block;
 	color:white;
-	margin:5px 0px;
+	margin:0px 0px 5px;
     position: relative;
     height: 35px;
     line-height: 35px;
@@ -328,8 +328,8 @@ textarea {
 menu {
 	display: block;
 	list-style-type: disc;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 	padding-inline-start: 5px;
@@ -438,7 +438,8 @@ div#my_submenu table tbody td:first-child {
 
 div#mycontent_submenu table tbody td div#p_course_nest ul {
     display:block;
-    width: 250px;
+	width: 250px;
+	padding: 3px;
 }
 
 div#mycontent_submenu table tbody td div#p_course_nest ul li {
@@ -448,11 +449,7 @@ div#mycontent_submenu table tbody td div#p_course_nest ul li {
     padding: 0 15px;
 }
 
-div#mycontent_submenu table tbody td div#p_module_nest menu {
-    list-style-type: none;
-    padding-bottom: 2em;
-    border-bottom: 1px solid #ccc;
-}
+
 
 div#mycontent_submenu table tbody td div#p_module_nest .divider {
     color: #000;
@@ -475,22 +472,22 @@ div#act_submenu table tbody td div#p_marking_nest{
 
 div#mycontent_submenu table tbody td div#p_module_nest menu,
 div#act_submenu table tbody td div#p_study_nest menu{
-    padding-bottom: 0;
-	padding-right: 2px;
+    padding-bottom: 24px;
+	padding-right: 5px;
 	padding-left: 1px;
 }
 
-menu .menu li {
+menu.menu li {
     height: auto;
     line-height: 1.5em;
     margin-bottom: 18px;
     padding-left: 0;
 }
-menu .menu2{
+menu.menu2{
  	 list-style-type: circle;
     border-bottom: 1px solid #ccc;
 }
-menu .menu2 li{
+menu.menu2 li{
 	list-style-type: circle;
 	padding-left: 10px;
     line-height: 30px;
@@ -511,7 +508,7 @@ div#act_submenu table tbody td div#p_study_nest menu li a{
 	display: block;
     font-size: 14px;
     margin-right: auto;
-    width: 200px;
+    width: 235px;
     white-space: nowrap;
     overflow: hidden;
 	text-overflow: ellipsis;
@@ -541,7 +538,7 @@ div#mycontent_submenu table tbody td div#p_module_nest menu li a {
     background-repeat: no-repeat;
     background-position: left 8px;
     padding-left: 1em;
-    width: 220px;
+    width: 250px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -564,7 +561,7 @@ span.graph {
     background-color: #eee;
     display: block;
     overflow: hidden;
-    width: 210px;
+    width: 202px;
 }
 
 span.bar {
@@ -629,8 +626,8 @@ div.table > menu >li{
 div.table > menu{
 	padding-inline-start: 0px;
 }
-menu.menu >li , menu.menu2 > li{
-	margin: 0px 0px 5px;
+menu.menu >li , menu.menu2 > li, menu.menu3 > li{
+	margin: 0px 0px 0px;
 }
 	
 	
