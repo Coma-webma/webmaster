@@ -168,7 +168,7 @@
 	.comment1_button button {
 		padding : 10px;
 	}
-	
+	------------------------------------------------------
 	 menu > li > a{
 		color: black;
 	}
@@ -180,7 +180,6 @@
 		margin-inline-start: 0px;
 		margin-inline-end: 0px;
 		padding-inline-start: 5px;
-		
 	}
 div#act_submenu table, div#my_submenu table {
     width: 100%;
