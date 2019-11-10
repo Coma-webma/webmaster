@@ -1,0 +1,182 @@
+/*공동공부 팝업 관련 CSS*/
+div#popup_together{
+    top: 155px;
+    background-color: #fff;
+    z-index: 15;
+}
+div.popup{
+    position: absolute !important;
+    right: -7;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+div.wrapper{
+    background-color: #fff;
+    background-position: left top;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+div.header{
+    height: 50px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    text-align: left;
+    border-bottom: solid 1px #666;
+}
+.header strong{
+    font-size: 22px;
+    line-height: 50px;
+    padding-left: 17px;
+    font-weight: bold;
+}
+div.study_bar{
+    background-position: right top;
+    background-repeat: repeat-y;
+    float: left;
+    overflow: hidden;
+}
+.study_bar ul{
+    min-height: 450px;
+    padding-left: 15px;
+    list-style: none;
+    margin: 0;
+    border-right: solid 1px #666;
+}
+.study_bar li{
+    display: list-item;
+    line-height: 26px;
+    padding-right: 10px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a.cell{
+    color:#666;
+    text-decoration: none;
+    font-size: 12px;
+}
+div.graph{
+    float: left;
+    position: relative;
+}
+div.graph_wrap{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+div.x_bar{
+    position: absolute;
+    left: 180px;
+    top: 15px;
+    overflow: hidden;
+}
+.x_bar ul{
+    overflow: hidden;
+    height: 100%;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.x_bar li{
+    color: #666;
+    display: inline-block;
+    font-size: 11px;
+    padding-top: 10px;
+    text-align: center;
+}
+li.dummy{
+    height: 5px;
+    visibility: hidden;
+}
+.goodjob_guys{
+    background-color: #eee;
+    background-repeat: repeat-y;
+    float: left;
+    position: relative;
+    border-left: solid 1px #666;
+}
+strong.title{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 0; 
+}
+div.good_wrap{
+    overflow: hidden;
+    position: relative;
+}
+div.good_wrap ul{
+    border-top: 1px dotted #bbb;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+div.good_wrap li{
+    border-bottom: 1px dotted #bbb;
+    line-height: 1.3em;
+    overflow: hidden;
+    padding: 8px 0;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    width: 130px;
+}
+div.good_wrap strong{
+    color: #000;
+    display: block;
+    padding-left: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 11px;
+}
+div.good_wrap small{
+    display: block;
+    padding-left: 60px;
+    color: #999;
+    font-size: 10px;
+    font-family: arial, sans-serif;
+    line-height: 1em;
+}
+img.user_pic{
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 3px;
+    top:8px;
+}
+button.join{
+    border: 1px solid #158bdc;
+    background-color: #fff;
+    color: #158bdc;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 28px;
+    padding: 0;
+    position: absolute;
+    border-radius: 3px
+}
+.close{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: url(../img/cancel.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    font-size: 1px;
+    text-indent: -600%;
+}
