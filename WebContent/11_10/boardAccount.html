@@ -1,13 +1,61 @@
 <link href="css/account1.css" rel="stylesheet" type="text/css">
 <link href="css/account.css" rel="stylesheet" type="text/css">
+<!--<link href="css/webmaster.css" rel="stylesheet" type="text/css">-->
+<script>
+    $(function () {
+        $("#a").on("click", function () {
+            $('li#a').addClass('selected');
+            $('li#b').removeClass('selected');
+            $('li#c').removeClass('selected');
+            $("div#mycontent_submenu").css("display", "block");
+            $("div#act_submenu").css("display", "none");
+            $("div#niName_submenu").css("display", "none");
+            return false;
+        });
+        $("#b").on("click", function () {
+            $('li#b').addClass('selected');
+            $('li#a').removeClass('selected');
+            $('li#c').removeClass('selected');
+            $("div#act_submenu").css("display", "block");
+            $("div#niName_submenu").css("display", "none");
+            $("div#mycontent_submenu").css("display", "none");
+            return false;
+        });
+        $("#c").on("click", function () {
+            $('li#c').addClass('selected');
+            $('li#a').removeClass('selected');
+            $('li#b').removeClass('selected');
+            $("div#niName_submenu").css("display", "block");
+            $("div#mycontent_submenu").css("display", "none");
+            $("div#act_submenu").css("display", "none");
+            return false;
+        });
+        $('html').click(function () {
+            $('li#c').removeClass('selected');
+            $('li#a').removeClass('selected');
+            $('li#b').removeClass('selected');
+            $("div#mycontent_submenu").css("display", "none");
+            $("div#act_submenu").css("display", "none");
+            $("div#niName_submenu").css("display", "none");
+        });
+        $(function () {
+            $("li#course1-1").on({
+                mouseenter: function () {
+                    $("div#1").css("display", "block");
+                },
+                mouseleave: function () {
+                    $("div#1").css("display", "none");
+                }
+            });
+        });
+    });
+</script>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>계정설정</title>
 </head>
-
 <body>
     <header>
         <div>
@@ -19,10 +67,9 @@
             </nav>
             <nav class="admin_right_nav">
                 <ul class="topmenu">
-                    <li><a class=line1 href=#>내컨텐츠</a></li>
+                    <!--<li><a class=line1 href=#>내컨텐츠</a></li>-->
                     <li><a class=line1 href=#>참여활동</a></li>
                     <li><a class=line2 href=#>닉네임</a></li>
-                    <!--<%= U_Nicname%>-->
                 </ul>
             </nav>
         </div>
