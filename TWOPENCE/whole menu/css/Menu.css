@@ -1,0 +1,18 @@
+.main{
+    width:100%;
+}
+body{
+    background-color: rgb(247, 244, 224);
+}
+caption{
+    text-align: center;
+    font-size:1.4em;
+    padding-top:20px;
+}
+.t1{
+    font-size:1.2em;
+    border-bottom:solid 1px black;
+}
+.t2{
+    padding-top:5px;
+}
