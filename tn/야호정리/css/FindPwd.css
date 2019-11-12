@@ -1,0 +1,19 @@
+.label{
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 15px;
+}
+input#email{
+    width: 250px;
+    height: 25px;
+    color: #999999;
+}
+.body1 {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: baseline;
+    
+}
+.layerbox1{
+    width:440px;
+}
