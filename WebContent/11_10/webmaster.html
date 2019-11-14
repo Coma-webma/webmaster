@@ -3,6 +3,7 @@
 
 <head>
 	<link href="css/webmaster.css" rel="stylesheet" type="text/css">
+	<link href="css/course_all.css" rel="stylesheet" type="text/css">
 	<link href="css/font.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script>
@@ -33,6 +34,21 @@
 				$("div#mycontent_submenu").css("display", "none");
 				$("div#act_submenu").css("display", "none");
 				return false;
+			});
+			$("#course_allview").on("click", function () {
+				$('li#course_allview').addClass('selected');
+				$('li#a').removeClass('selected');
+				$('li#b').removeClass('selected');
+				$('li#c').removeClass('selected');
+				$("div#all_menus").css("display", "block");
+				$("div#niName_submenu").css("display", "none");
+				$("div#mycontent_submenu").css("display", "none");
+				$("div#act_submenu").css("display", "none");
+				return false;
+			});
+			$(".btn_close").on("click", function () {
+				$('li#course_allview').removeClass('selected');
+				$("div#all_menus").css("display", "none");
 			});
 			$('html').click(function () {
 				$('li#c').removeClass('selected');
@@ -79,7 +95,7 @@
 				<nav class="left_nav1">
 					<ul class="topmenu">
 						<li id="to_home"><a class="mainline" href="Main.html">COMA</a></li>
-						<li><a class="img" href=#>전체보기</a></li>
+						<li id="course_allview"><a class="img" href=#>전체보기</a></li>
 					</ul>
 				</nav>
 				<nav class="right_nav1">
@@ -277,6 +293,65 @@
 		</div>
 	</nav>
 	</header>
+	</div>
+	<!-- 전체 메뉴 수정 부분  -->
+	<div id="all_menus" class="registered_layer" style="display:none;">
+			<div class="pin2"></div>
+			<div class="wrapper2">
+				<table class="mytable">
+					<caption>
+						<h3>코스전체목록</h3>
+						<a class="btn_close"><span>닫기</span></a>
+					</caption>
+					<tr height="80px"></tr>
+					<tr>
+						<td width="12%"></td>
+						<td width="16%" class="t1">코스1</td>
+						<td width="4%"></td>
+						<td width="16%" class="t1">코스2</td>
+						<td width="4%"></td>
+						<td width="16%" class="t1">코스3</td>
+						<td width="4%"></td>
+						<td width="16%" class="t1">코스4</td>
+						<td width="12%"></td>
+					</tr>
+					<tr height="15px"></tr>
+					<tr>
+						<td width="12%"></td>
+						<td width="16%">코스1-1</td>
+						<td width="4%"></td>
+						<td width="16%">코스2-1</td>
+						<td width="4%"></td>
+						<td width="16%">코스3-1</td>
+						<td width="4%"></td>
+						<td width="16%">코스4-1</td>
+						<td width="12%"></td>
+					</tr>
+					<tr>
+						<td width="12%"></td>
+						<td width="16%" class="t2">코스1-2</td>
+						<td width="4%"></td>
+						<td width="16%" class="t2">코스2-2</td>
+						<td width="4%"></td>
+						<td width="16%" class="t2">코스3-2</td>
+						<td width="4%"></td>
+						<td width="16%" class="t2">코스4-2</td>
+						<td width="12%"></td>
+					</tr>
+					<tr>
+						<td width="12%"></td>
+						<td width="16%" class="t2">코스1-3</td>
+						<td width="4%"></td>
+						<td width="16%" class="t2">코스2-3</td>
+						<td width="4%"></td>
+						<td width="16%" class="t2">코스3-3</td>
+						<td width="4%"></td>
+						<td width="16%" class="t2">코스4-4</td>
+						<td width="12%"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</div>
 	<div class="dir">
 		<div class="dir_main">

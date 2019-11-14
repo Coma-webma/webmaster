@@ -1,0 +1,60 @@
+div#all_menus {
+    width: 100%;
+    height: 100%;
+}
+
+div.pin2 {
+    background-image: url(../img/navbar/submenu_arrow_up_grey.gif);
+    background-repeat: no-repeat;
+    left: 130px;
+    width: 17px;
+    height: 9px;
+    top: -8px;
+    z-index: 7;
+}
+
+a.btn_close {
+    right: 15px;
+    top: 22px;
+    width: 21px;
+    height: 21px;
+}
+
+.btn_close {
+    background-image: url(../img/navber/close_x.png);
+    background-position: center center;
+    background-color: inherit;
+    border: 0;
+    text-indent: -5000px;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+}
+
+div.wrapper2 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+
+    background-color: #eee;
+    text-align: left;
+} 
+
+div.wrapper2 table {
+    width: 100%;
+}
+
+caption{
+    text-align: center;
+    font-size:1.4em;
+    padding-top:20px;
+}
+.t1{
+    font-size:1.2em;
+    border-bottom:solid 1px black;
+}
+.t2{
+    padding-top:5px;
+}
