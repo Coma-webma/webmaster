@@ -6,11 +6,6 @@
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="jdbc" class="coma.JDBC"/>
-<%
-	//DB연결
-	jdbc.Conn();
-%>
 
 <!DOCTYPE html>
 <html>

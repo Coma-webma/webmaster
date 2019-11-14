@@ -3,71 +3,11 @@
 
 <head>
 	<link href="css/webmaster.css" rel="stylesheet" type="text/css">
+	<link href="css/webtop.css" rel="stylesheet" type="text/css">
+	<link href="css/webtopmenu.css" rel="stylesheet" type="text/css">
 	<link href="css/font.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script>
-		$(function () {
-			$("#a").on("click", function () {
-				$('li#a').addClass('selected');
-				$('li#b').removeClass('selected');
-				$('li#c').removeClass('selected');
-				$("div#mycontent_submenu").css("display", "block");
-				$("div#act_submenu").css("display", "none");
-				$("div#niName_submenu").css("display", "none");
-				return false;
-			});
-			$("#b").on("click", function () {
-				$('li#b').addClass('selected');
-				$('li#a').removeClass('selected');
-				$('li#c').removeClass('selected');
-				$("div#act_submenu").css("display", "block");
-				$("div#niName_submenu").css("display", "none");
-				$("div#mycontent_submenu").css("display", "none");
-				return false;
-			});
-			$("#c").on("click", function () {
-				$('li#c').addClass('selected');
-				$('li#a').removeClass('selected');
-				$('li#b').removeClass('selected');
-				$("div#niName_submenu").css("display", "block");
-				$("div#mycontent_submenu").css("display", "none");
-				$("div#act_submenu").css("display", "none");
-				return false;
-			});
-			$('html').click(function () {
-				$('li#c').removeClass('selected');
-				$('li#a').removeClass('selected');
-				$('li#b').removeClass('selected');
-				$("div#mycontent_submenu").css("display", "none");
-				$("div#act_submenu").css("display", "none");
-				$("div#niName_submenu").css("display", "none");
-			});
-			$(function () {
-				$("li#course1-1").on({
-					mouseenter: function () {
-						$("div#1").css("display", "block");
-					},
-					mouseleave: function () {
-						$("div#1").css("display", "none");
-					}
-				});
-			});
-		});
-
-		function popup(url, w, h, name, option) {
-			var pozX, pozY;
-			var sw = screen.availWidth;
-			var sh = screen.availHeight;
-			var scroll = 0;
-			if (option == 'scroll') {
-				scroll = 1;
-			}
-			pozX = (sw - w) / 2;
-			pozY = (sh - h) / 2;
-			window.open(url, name, "location=0,status=0,scrollbars=" + scroll + ",resizable=1,width=" + w + ",height=" + h +
-				",left=" + pozX + ",top=" + pozY);
-		}
-	</script>
+	<script src="jquery/webmenu.js"></script>
 	<meta charset="UTF-8">
 	<title>웹 마스터</title>
 </head>
@@ -216,7 +156,7 @@
 		<p class="title2">Web Master</p>
 	</div>
 	<nav class="main_nav1 menubar">
-		<div class="wrapper">
+		<div class="course2">
 			<ul class="topmenu1">
 				<li id="course1-1">
 					<div class="label">
@@ -318,6 +258,8 @@
 				</button>
 			</div>
 		</div>
+		<ol id="comment_list">
+			<li id="00">
 		<div class="comment2">
 			<div class="comment2_1"><img src="img/pro.png"></div>
 			<div class="comment2_2">
@@ -327,9 +269,37 @@
 				2019-10-29
 			</div>
 			<div class="comment2_4">
-				댓글입니다~
-			</div>
-		</div>
+					댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~
+				</div>
+				<div class="com_buttons" style="display: block;">
+						<a class="icon reply" href="#">
+							<span class="ico ico_reply"></span>
+							답글
+						</a>
+					</div>
+				</div>
+		</li>
+		<li id="01">
+				<div class="comment2">
+					<div class="comment2_1"><img src="img/pro.png"></div>
+					<div class="comment2_2">
+						닉네임dd
+					</div>
+					<div class="comment2_3">
+						2019-10-29
+					</div>
+					<div class="com_buttons" style="display: block;">
+						<a class="icon reply" href="#">
+							<span class="ico ico_reply"></span>
+							답글
+						</a>
+					</div>
+					<div class="comment2_4">
+							댓글입니다~
+						</div>
+						</div>
+				</li>
+		</ol>
 		<div class="footer">
 			<a href="#">더보기</a>
 		</div>
