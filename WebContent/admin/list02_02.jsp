@@ -37,8 +37,8 @@
             <div>
             <nav id=main>
              <ul class=admin_menu>
-                <li><a class="active" href="list01.html"><span class="menu_name1 ">회원목록</span></a></li>
-                <li><a class="active" href="list02.html"><span class="menu_name ">black list</span></a></li>
+                <li><a class="active" href="list01.jsp"><span class="menu_name1 ">회원목록</span></a></li>
+                <li><a class="active" href="list02_02.jsp"><span class="menu_name ">black list</span></a></li>
                 <li><a href="#"><span class="menu_name">신고하기</span></a></li>
                 </ul>
             </nav>
