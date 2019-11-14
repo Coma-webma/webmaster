@@ -1,0 +1,395 @@
+menu {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 5px;
+}
+
+menu > li > a{
+	color: black;
+}
+
+/* 테이블의 기본 모양 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div.submenu{
+	position: absolute !important;
+    top: 40px;
+	right: -7px;
+	width: 530px;
+	z-index: 7;
+
+	-moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);
+    -o-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
+    box-shadow:0 0 5px rgba(0,0,0,0.3)
+}
+
+.layerbox{
+	margin: 0 auto;
+}
+
+div#mycontent_submenu table,
+div#act_submenu table,
+div#my_submenu table {
+    width: 100%;
+    height: 100%;
+}
+
+div#mycontent_submenu table thead th,
+div#act_submenu table thead th,
+div#my_submenu table thead th {
+    width: 50%;
+    text-align: left;
+	border-bottom: 1px solid #ddd;
+	height: 36px;
+}
+
+div#mycontent_submenu table thead th:first-child,
+div#act_submenu table thead th:first-child,
+div#my_submenu table thead th:first-child{
+    border-right: 1px solid #ccc;
+}
+
+div#mycontent_submenu table thead th .subtitle,
+div#act_submenu table thead th .subtitle,
+div#my_submenu table thead th .subtitle {
+    color: #666;
+    font-size: 11px;
+    float: right;
+    padding: 0 12px 0 0;
+    font-weight: normal;
+}
+
+div#mycontent_submenu table thead th .controls {
+    float: right;
+    padding-right: 6px;
+    margin-top: -1px;
+}
+
+div#mycontent_submenu table thead th .controls a {
+    font-size: .95em;
+    margin: 0 0 0 1px;
+    padding: 4px 6px;
+    font-weight: normal;
+}
+
+div#mycontent_submenu table thead th .controls a.setting,
+div#mycontent_submenu table thead th .controls a.add{
+    background-color: #eee;
+    color: #666 !important;
+}
+
+div#mycontent_submenu table thead th span.inner,
+div#act_submenu table thead th span.inner,
+div#my_submenu table thead th span.inner {
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 15px;
+    color: #000;
+}
+
+div#mycontent_submenu table tbody td,
+div#act_submenu table tbody td,
+div#my_submenu table tbody td {
+    vertical-align: top;
+    width: 50%;
+}
+
+div#mycontent_submenu table tbody td:first-child,
+div#act_submenu table tbody td:first-child,
+div#my_submenu table tbody td:first-child {
+    border-right: .1em solid #ddd;
+}
+
+div#mycontent_submenu table tbody td div#p_course_nest ul {
+    display:block;
+	width: 250px;
+	padding: 3px;
+}
+
+div#mycontent_submenu table tbody td div#p_course_nest ul li {
+    border-bottom: 1px solid #eee;
+    border-right: 0;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+
+
+
+div#mycontent_submenu table tbody td div#p_module_nest .divider {
+    color: #000;
+    padding-left: 1em;
+    font-weight: bold;
+	background-color: #f8f8f8;
+	line-height: 25px;
+}
+
+div#mycontent_submenu table tbody td div#p_course_nest,
+div#mycontent_submenu table tbody td div#p_module_nest,
+div#act_submenu table tbody td div#p_study_nest,
+div#act_submenu table tbody td div#p_marking_nest{
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -moz-box-shadow: inset 0 0 8px #fff;
+    -webkit-box-shadow: inset 0 0 8px #fff;
+    box-shadow: inner 0 0 8px #fff;
+}
+
+div#mycontent_submenu table tbody td div#p_module_nest menu,
+div#act_submenu table tbody td div#p_study_nest menu{
+    padding-bottom: 24px;
+	padding-right: 5px;
+	padding-left: 1px;
+}
+
+menu.menu li {
+    height: auto;
+    line-height: 1.5em;
+    margin-bottom: 18px;
+    padding-left: 0;
+}
+menu.menu2{
+ 	 list-style-type: circle;
+    border-bottom: 1px solid #ccc;
+}
+menu.menu2 li{
+	list-style-type: circle;
+	padding-left: 10px;
+    line-height: 30px;
+}
+
+div#mycontent_submenu table tbody td div#p_module_nest menu li,
+div#act_submenu table tbody td div#p_study_nest menu li{
+    list-style-type: none;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+div#mycontent_submenu table tbody td div#p_course_nest ul li a,
+div#mycontent_submenu table tbody td div#p_module_nest menu li a,
+div#act_submenu table tbody td div#p_study_nest menu li a{
+    background-image: none;
+    color: #000;
+	display: block;
+    font-size: 14px;
+    margin-right: auto;
+    width: 235px;
+    white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	background-repeat: no-repeat;
+	background-position: left 8px;
+	line-height: 2;
+}
+
+
+div#niName_submenu div.table menu li a {
+    color: #000 !important;
+    display: block;
+    font-size: 13px;
+    height: 2em;
+    line-height: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div#act_submenu table tbody td div#p_marking_nest menu li a,
+div#mycontent_submenu table tbody td div#p_module_nest menu li a {
+    color: #777;
+	display: block;
+	background-image: url(../img/navber/list_01.gif);
+    background-repeat: no-repeat;
+    background-position: left 8px;
+    padding-left: 1em;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.archieved{
+	margin-top: 7px;
+    margin-left: 1px;
+}
+
+span.percentage {
+    color: #666;
+    float: right;
+    font-size: 10px;
+    font-family: arial,sans-serif;
+    line-height: 8px;
+}
+
+span.graph {
+    background-color: #eee;
+    display: block;
+    overflow: hidden;
+    width: 202px;
+}
+
+span.bar {
+    background-color: #77c2d0;
+    display: block;
+    height: 8px;
+	margin-right: auto;
+	
+}
+
+.pin{
+	background-image: url(../img/navber/pin_layer.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    z-index: 15;
+}
+.pin_top{
+	background-position: bottom left;
+    top: -24.7px;
+    left: 470px;
+}
+
+
+li.selected > span{
+	color: white;
+} 
+
+menu > li:hover{
+	background-color: #f8f8f8;
+}
+
+/* 참여활동 */
+
+li.selected div.submenu {
+    display: block;
+}
+div#niName_submenu {
+    right: 0;
+    width: 85px;
+}
+
+.submenu table, .submenu .table {
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+div#niName_submenu div.pin {
+    left: 25px;
+}
+div#act_submenu div.pin {
+    left: 380px;
+}
+div#mycontent_submenu div.pin {
+    left: 280px;
+}
+
+
+div.table > menu >li > a:hover{
+	background-color: #eee;
+}
+
+div.table > menu >li{
+	width: 83px;
+
+}
+div.table > menu{
+	padding-inline-start: 0px;
+}
+menu.menu >li , menu.menu2 > li, menu.menu3 > li{
+	margin: 0px 0px 0px;
+}
+nav.main_nav1>div.course2>ul>li:first-child>div.label {
+    border-left: 0;
+}
+ nav.main_nav1>div.course2>ul>li>div.sub_nav {
+    z-index: 100;
+}
+div.pin > ul.sub_nav{
+	float: left;
+    position: absolute;
+    left: 0;
+    top: 42px;
+    display: none;
+    z-index: 100;
+    min-width: 165px;
+	-moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);
+	-o-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+	}
+
+nav.main_nav1>div.course2>ul>li>div.sub_nav  div.pin {
+    background-image: url(../img/navber/submenu_arrow.gif);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    height: 9px;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+nav.main_nav1>div.course2>ul>li>div.sub_nav>ul {
+    background-color: #fff;
+    border: 1px solid #adadad;
+    padding: 10px 0;
+	text-align: left;
+	margin-block-start: 14px;
+}
+ul.sub_nav li{
+	display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+nav.main_nav1>div.course2>ul>li>div.sub_nav>ul>li>div.label a {
+    cursor: pointer;
+    color: #858585;
+    display: inline-block;
+    font-size: 14px;
+	padding: 8px 15px;
+	width: 167px;
+}
+nav.main_nav1>div.course2r>ul>li>div.sub_nav>ul>li>div.label a:hover {
+	background-color: #eee;
+}
+
+ nav.main_nav>div.course2>ul>li>div.sub_nav>ul>li div.sub_nav.depth_2>ul>li>div.label a {
+    padding-left: 30px;
+}
+ nav.main_nav1>div.course2>ul>li>div.sub_nav>ul>li div.sub_nav ul li div.label a {
+    cursor: pointer;
+    color: #858585;
+    display: block;
+	padding: 7px 5px 7px 35px;
+	font-size: 13px;
+	width: 157px;
+ }
+nav.main_nav1>div.course2>ul>li>div.sub_nav>ul>li div.sub_nav ul li div.label {
+    background-image: url(../img/navber/list_dash_01.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+nav.main_nav1>div.course2>ul>li>div.sub_nav>ul>li div.sub_nav ul li div.label a:hover {
+	background-color: #eee;
+	color: black;
+	background-image: url(../img/navber/list_dash_01.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+	
+}
+ul.sub_nav {
+	padding-inline-start: 0;
+}
