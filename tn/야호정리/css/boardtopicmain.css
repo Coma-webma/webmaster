@@ -1,0 +1,158 @@
+*{
+    margin : 0;
+    padding: 0;
+
+}
+article{/*커버페이지*/
+    position: absolute;
+    top: 15px;
+     left: 270px;
+     width: 900px;
+}
+hgroup{
+    display: block;
+    height: 40px;
+}
+#img1 > h2{
+    background-image: url(../img/icon_title.png);
+    background-repeat: no-repeat;
+    background-position:  2px -32px;
+    padding-left: 35px;
+}
+h2{
+    height: 60px;
+    line-height: 60px;
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    padding: 0px 0px 0px 45px;
+}
+fieldset#functions{
+    width: 743px;
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    border: 0px;
+}
+
+fieldset#functions ul li{
+    display: block;
+    float: left;
+    border-left: 1px solid #fff;
+    width: 130px;
+    background-color: #eee;
+  }
+  fieldset#functions input[type='radio'] {
+    display: none;
+}
+input[type="radio"] {
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+}
+fieldset#functions ul li input[type='radio']:checked+label {
+    background-color: #3c9;
+}
+fieldset#functions ul li label {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+label {
+    cursor: pointer;
+}
+
+
+section {/*모듈목록밑으로 쭉쭉쭉*/
+    position: absolute;
+    top: 90px;
+    width: 900px;
+}
+.select {
+    padding:10px 20px;
+}
+.make {/*토픽만들기*/
+    background-color: #f89a69;
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+    padding:5px 10px;
+    font-size: 14px;
+}
+
+
+.a12{ /*목록*/
+    width:900px;
+    height:30px;
+    background-color:rgb(245, 243, 243);
+    border-bottom:1px solid rgb(190, 188, 188);
+    line-height:30px;
+    font-size:0.8em;
+    align-content: center;
+    border-spacing: 0;
+    margin-top: 15px;
+}
+.chk {/*테이블 제목*/
+    margin-left: 20px;
+    text-align: center;
+    width: 40px;
+}
+.detail{
+    width: 300px;
+    text-align:left;
+}
+.public1{
+    width:80px;
+    text-align: center;
+}
+.date{
+    width:80px;
+    height:40px;
+    background-size:25px;
+    text-align: center;
+}
+.del{
+    width:80px;
+    height:40px;
+    background-size:25px;
+    text-align: center;
+}
+.border1{
+    background-color:white;
+}
+.border1 tr:hover {
+    background-color: #eee;
+    color:black;
+}
+strong {
+    color:#666;
+}
+
+div.buttons { /* 더보기 */
+    margin-top: 3em;
+    text-align: center;
+    border-left: .1em solid #fff;
+}
+div.buttons .inner {
+    margin: 0 2em;
+}
+#module_seemore {
+    background-color: #fff;
+    color: #666;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 1.3em 0 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    width: 5em;
+}

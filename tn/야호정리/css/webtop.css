@@ -1,0 +1,206 @@
+html, body, menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    outline: 0;
+	height: 100%;
+}
+div {
+    display: block;
+}
+ol{
+	list-style: none;
+}
+
+.all {
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color:#ccc;
+}
+
+span.line1{
+	border-right: 1px solid #5f7b97;
+	position: relative;
+	padding: 0px 20px;
+	color:#ccc;
+}
+span.line2{
+	position: relative;
+	padding: 0px 20px;
+	color:#ccc;
+}
+nav span:hover{
+	color: white;
+	cursor: pointer;
+}
+
+a.line1:hover, a.mainline:hover{
+	color: white;
+	cursor: pointer;
+}
+a.line1, a.mainline{
+	position: relative;
+	padding: 0px 20px 0px 40px;
+}
+a.line1{
+	border-right: 1px solid #5f7b97;
+}
+a.img{
+	background-repeat: no-repeat;
+	background-image: url(../img/navber/icon_allview.png);
+	margin-top: 1px;
+}
+a.img:hover{
+	background-repeat: no-repeat;
+	background-image: url(../img/navber/icon_allview_hover.png);
+}
+
+a.line3{
+	border-right: 1px solid #5f7b97;
+	position: relative;
+	padding: 0px 30px;
+	
+}
+
+a.line4{
+	position: relative;
+	padding: 0px 30px;
+}
+
+p.title1 a{
+	color: white;
+}
+.top {
+	width:100%;
+}
+
+header {
+	width:100%;
+	background-color: #4d6c8b;
+}
+
+header div nav ul.topmenu{
+	margin-top: 5px;
+	font-size: 14px;
+	padding-inline-start: 10px;
+}
+header nav div ul.topmenu1{
+	margin-top: 5px;
+	font-size: 17px;
+	margin: 0px;
+}
+
+
+#trigger:checked {
+	display: block;
+}
+
+.left_nav1 {
+	list-style: none;
+	margin:0;
+	padding:1px;
+	width:200px;
+	height:50px;
+}
+.left_nav1 >ul.topmenu> li {
+	display: inline-block;
+	float: left;
+	margin-top: 5px;
+}
+
+.left_nav1 #to_home {
+    padding-right: .5em;
+	margin-top: .5em;
+
+}
+a.img {
+    line-height: 17px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    overflow: hidden;
+    text-indent: 100em;
+    width: 17px;
+}
+
+.right_nav1 {
+	display: block;
+	position: absolute;
+	right:20px;
+	display:block;
+	top:1px;
+}
+.right_nav1 li {
+	display:inline-block;
+	color:white;
+	margin:5px 0px;
+   
+    
+}
+.title1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 5px ;
+	color:white;
+}
+.title2 {
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 5px ;
+	color:#a3bfdb;
+}
+
+.main_nav1 {
+	width:100%;
+	background-color: #4d6c8b;
+	text-align: center;
+}
+.main_nav1 li {
+	display:inline-block;
+	color:white;
+	margin:5px 0px;
+	padding:10px 0;
+}
+
+.dir { /*코스위치 및 공동공부*/
+	background-color: #eee;
+	width:100%;
+	font-size: 12px;
+}
+.dir_main {
+	width:980px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 auto;
+	padding:10px;
+	position: relative;
+    vertical-align: middle;
+}
+.dir_main #breadcrumb_line {
+    padding-left: 15px;
+	color: #999;
+	cursor: auto;
+}
+.dir_main #breadcrumb_line .divider {
+    color: #bbb;
+    padding: 0 5px;
+}
+.dir_main_img {
+	float: right;
+	vertical-align: top;
+}
+.dir_main_right {
+	float: right;
+	vertical-align: top;
+}
+.dir_main_right > a {
+    color: #999;
+    margin-left: 5px;
+}
+.dir_main_right > a {
+    color: black;
+    margin-left: 5px;
+}

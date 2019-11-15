@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+html{
+    margin:0;
+}
+body{
+    margin :0;
+    font-family:'Nanum Gothic';
+}
+.head{
+    background-color: rgb(77, 108,139);
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+header{
+    position: relative;
+    text-align: center;
+    z-index: 14;
+}
+hgroup{
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.title{
+    font-size: 2.0em;
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#left_nav{
+    color:#999;
+    position: absolute;
+    left:10px;
+    top:0;
+    font-size: 12px;
+    padding-left: 7px;
+    z-index: 1000;
+}
+#to_home{
+    padding-right: .5em;
+    font-size: 1.1em;
+}
+#left_nav #to_home a{
+    color: #ccc;
+    text-indent: inherit;
+    width:inherit;
+    height: 20px;
+    line-height: 20px;
+    font-family: Verdana !important;
+    text-decoration: none;
+}
+#cols{
+    border: none !important;
+    padding-top: 100px;
+}
+.layerbox{
+    line-height: 12px;
+    margin: 0 auto;
+    position: relative;
+    width:470px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.entry-area{
+    float: none !important;
+    width: auto !important;
+}
+form{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.login_table{
+    background-color: #ffffff;
+    border: 1px solid #bbb;
+    color: #666; 
+}
+.header{
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 15px;
+}
+strong{
+    color:#000;
+    font-size: 12px;
+}
+.body{
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.label{
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 15px;
+}
+input.text{
+    width: 320px;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 1.2em;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn.btn_submit{
+    padding: 10px 40px !important;
+    background-color: #3c9;
+    border: 1px solid #3c9;
+    color: #ffffff; 
+}
+.btn{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.footer{
+    border-top: 1px solid #ccc;
+    padding-top: 2em;
+    font-size: 14px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.a{
+    color: #666 !important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 3px;
+    text-decoration: none;
+}
+.body1 {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: baseline;
+    
+}

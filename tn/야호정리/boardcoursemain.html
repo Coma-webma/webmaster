@@ -1,0 +1,278 @@
+<link href="css/boardmain.css" rel="stylesheet" type="text/css">
+<link href="css/course_add.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/webtopmenu.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="resize/plugin.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+<script src="jquery/webmenu.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>코스 전체</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="admin_left_nav">
+                    <ul class="topmenu">
+                        <li id="to_home"><a class="mainline" href="Main.html">COMA</a></li>
+                    </ul>
+            </nav>
+            <nav class="admin_right_nav">
+                                    <ul class="topmenu">
+                <li id="a"><span class="line1">내컨텐츠</span>
+                    <div id="mycontent_submenu" class="submenu layerbox" style="display: none;">
+                        <div class="pin pin_top"></div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="course">
+                                        <span class="inner">코스</span>
+                                        <div class="controls">
+                                            <a class="setting" href="">설정</a>
+                                            <a class="add" href="">추가</a>
+                                        </div>
+                                    </th>
+                                    <th class="module">
+                                        <span class="inner">모듈</span>
+                                        <div class="controls">
+                                            <a class="setting" href="">설정</a>
+                                            <a class="add" href="">추가</a>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="course">
+                                        <div id="p_course_nest" class="scrollbox">
+                                            <ul>
+                                                <li>
+                                                    <a href="">코스1</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td class="module">
+                                        <div id="p_module_nest" class="scrollbox">
+                                            <div class="divider">소유중인 모듈</div>
+                                            <menu class="menu3">
+                <li>
+                    <a href="">모듈 2</a>
+                </li>
+                <li>
+                    <a href="">모듈 2</a>
+                </li>
+                </menu>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+</div>
+</li>
+<li id="b"><span class="line1" href=#>참여활동</span>
+<div id="act_submenu" class="submenu layerbox" style="display: none;">
+    <div class="pin pin_top"></div>
+    <table>
+        <thead>
+            <tr>
+                <th class="study">
+                    <span class="inner">공동공부</span>
+                </th>
+                <th class=marking>
+                    <span class="inner">봤어요</span>
+                    <span class="subtitle">
+                        누적봤어요 <span class="count">1</span>번
+                    </span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="study">
+                    <div id="p_study_nest" class="scrollbox">
+                        <menu class="menu">
+<li>
+<a href="#">듣고있는 것</a>
+<div class="archieved">
+    <span class="percentage">&nbsp; 15%</span>
+    <span class="graph">
+        <span class="bar" style="width: 15%;"></span>
+    </span>
+</div>
+</li>
+<li>
+<a href="#">듣고있는 것</a>
+<div class="archieved">
+    <span class="percentage">50%</span>
+    <span class="graph">
+        <span class="bar" style="width: 50%;"></span>
+    </span>
+</div>
+</li>
+</menu>
+</div>
+</td>
+<td class="marking">
+<div id="p_marking_nest" class=scrollbox>
+    <menu class="menu2">
+        <li>
+            <a href="#">듣고있는것의 코스이름</a>
+        </li>
+        <li>
+            <a href="#">듣고있는것의 코스이름</a>
+        </li>
+    </menu>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="c"><span class="line2" href=#>닉네임</span>
+<div id="niName_submenu" class="submenu layerbox" style="display:none;">
+    <div class="pin pin_top"></div>
+    <div class="table">
+        <menu>
+<li><a href="boardtopicmain.html">관리자</a></li>
+<li><a href="#">로그아웃</a></li>
+</menu>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+    </div>
+    </header >
+    <div id=contant>
+        <div>
+            <nav id=main>
+                <ul class=admin_menu>
+                    <li><a href="boardmodulemain.html"><span class="menu_name">모듈</span></a></li>
+                    <li><a class="active" href="boardcoursemain.html"><span class="menu_name">코스</span></a></li>
+                    <li><a href="boardAccount.html"><span class="menu_name">계정</span></a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="menu_all">
+                    <li class="menu_all_add">
+                        <p>전체 모듈 목록</p>
+                    </li>
+                    <button class="button1"><a href="boardcourse.html" style="color: white">추가</a></button>
+                    <select class="sel" name="latest">
+                        <option value="low">최신순</option>
+                        <option value="low">내림차순</option>
+                        <option value="up">오름차순</option>
+                    </select>
+                </ul>
+                <nav id="main_bar">
+                    <ul class="main_bar_all">
+                        <a href="boardcoursemodify.html">
+                            <li>▶ 프론트엔드 1-1</li>
+                        </a>
+                        <ul>
+                            <a href="boardcoursemodify.html">
+                                <li>- HTML 1-1-1</li>
+                            </a>
+                            <a href="boardcoursemodify.html">
+                                <li>- CSS 1-1-2</li>
+                            </a>
+                            <a href="#">
+                                <li>- javascript 1-1-3</li>
+                            </a>
+                        </ul>
+                        </li>
+                        <a href="boardcoursemodify.html">
+                            <li>▶ 백엔드 2-1</li>
+                        </a>
+                    </ul>
+                </nav>
+        </div><!-- 관리자모드 메인 -->
+        <article>
+            <hgroup id="img1">
+                <h2>코스 전체</h2><!-- 나중에 이름바꾸기 수정시-->
+            </hgroup>
+            <div class="a9">
+                <p class="a10">선택된 항목을
+                    <select>
+                        <option value="top">선택한 항목에 대한 작업</option>
+                        <option value="low">공개</option>
+                        <option value="up">비공개</option>
+                    </select>
+                </p>
+                <p class="a11">
+                    <label><input type="checkbox" value="공개" checked>공개</label>
+                    <label><input type="checkbox" value="비공개" checked>비공개</label>
+                </p>
+            </div>
+            <table class="a12">
+                <thead>
+                    <tr>
+                        <th class="chk"><input type="checkbox"></th>
+                        <th class="main_img">대표이미지</th>
+                        <th class="detail">제목/요약</th>
+                        <th class="public">공개</th>
+                        <th class="public">최초변경일</th>
+                        <th class="del">삭제</th>
+                    </tr>
+                </thead>
+                <tbody class="border1">
+                    <tr>
+                        <td class="chk"><input type="checkbox"></td>
+                        <td class="main_img">대표이미지</td>
+                        <td class="detail"><a href="boardcoursemodify.html"><strong>백엔드 2-1</strong></a></td>
+                        <td class="public">●</td>
+                        <td class="public">2019-11-01</td>
+                        <td class="del">삭제</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox"></td>
+                        <td class="main_img">대표이미지</td>
+                        <td class="detail"><a href="#"><strong>javaScript1-1-3</strong></a></td>
+                        <td class="public">○</td>
+                        <td class="public">2019-11-01</td>
+                        <td class="del">삭제</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox"></td>
+                        <td class="main_img">대표이미지</td>
+                        <td class="detail"><a href="#"><strong> CSS 1-1-2</strong></a></td>
+                        <td class="public">●</td>
+                        <td class="public">2019-10-30</td>
+                        <td class="del">삭제</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox"></td>
+                        <td class="main_img">대표이미지</td>
+                        <td class="detail"><a href="boardcoursemodify.html"><strong>HTML 1-1-1</strong></a></td>
+                        <td class="public">●</td>
+                        <td class="public">2019-10-29</td>
+                        <td class="del">삭제</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox"></td>
+                        <td class="main_img">대표이미지</td>
+                        <td class="detail"><a href="boardcoursemodify.html"><strong>프론트엔드 1-1</strong></a></td>
+                        <td class="public">○</td>
+                        <td class="public">2019-10-29</td>
+                        <td class="del">삭제</td>
+                    </tr>
+                    <tr>
+                        <td class="chk"><input type="checkbox"></td>
+                        <td class="main_img">대표이미지</td>
+                        <td class="detail"><a href="boardcoursemodify.html"><strong>웹개발 1-1</strong></a></td>
+                        <td class="public">●</td>
+                        <td class="public">2019-10-28</td>
+                        <td class="del">삭제</td>
+                    </tr>
+            </table>
+        </article>
+</body>
+
+</html>
