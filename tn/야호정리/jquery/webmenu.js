@@ -34,6 +34,22 @@ $(function () {
 		$("div#act_submenu").css("display", "none");
 		$("div#niName_submenu").css("display", "none");
 	});
+	/*코스 전체 목록 */
+	$("#course_allview").on("click", function () {
+		$('li#course_allview').addClass('selected');
+		$('li#a').removeClass('selected');
+		$('li#b').removeClass('selected');
+		$('li#c').removeClass('selected');
+		$("div#all_menus").css("display", "block");
+		$("div#niName_submenu").css("display", "none");
+		$("div#mycontent_submenu").css("display", "none");
+		$("div#act_submenu").css("display", "none");
+		return false;
+	});	/*코스 전체 목록 닫기 */
+	$(".btn_close").on("click", function () {
+		$('li#course_allview').removeClass('selected');
+		$("div#all_menus").css("display", "none");
+	});
 	// 코스 1-1 하위메뉴 나오게하기
 	$(function () {
 		$("li#course1-1").on({
