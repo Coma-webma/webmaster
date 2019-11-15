@@ -25,8 +25,7 @@
 				session.setAttribute("u_nickname", rs.getString("u_nickname"));
 				response.sendRedirect("Main.jsp");
 			}else{
-				session.setAttribute("check", false);
-				response.sendRedirect("Login.jsp");
+				response.sendRedirect("Login.jsp?check=false");
 			}
 			pstmt.close();
 			conn.close();

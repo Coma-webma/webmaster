@@ -6,12 +6,6 @@
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="jdbc" class="coma.JDBC"/>
-<%
-	//DB연결
-	jdbc.Conn();
-%>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +25,7 @@
             </hgroup>
             <ul id="left_nav">
                 <li id="to_home">
-                    <a href="COMA.html">COMA</a>
+                    <a href="Main.jsp">COMA</a>
                 </li>
             </ul>
         </header>
@@ -84,9 +78,9 @@
                             </div>
                         </div>
                         <div class="footer">
-                            <a class="a" href="FindPwd.html">비밀번호 찾기</a>
+                            <a class="a" href="FindPwd.jsp">비밀번호 찾기</a>
                             |
-                            <a class="a" href="Login.html">로그인</a>
+                            <a class="a" href="Login.jsp">로그인</a>
                         </div>
                     </div>
                 </form>

@@ -48,7 +48,7 @@
             </hgroup>
             <ul id="left_nav">
                 <li id="to_home">
-                    <a href="COMA.html">COMA</a>
+                    <a href="Main.jsp">COMA</a>
                 </li>
             </ul>
         </header>
@@ -62,12 +62,12 @@
                             <strong>요청완료</strong>
                         </div>
                         <div class="body1">
-                                <p>회원 가입 완료!<%= u_nickname %><br></p>
+                                <p>회원 가입 완료!<br></p>
                         </div>
                         <div class="footer">
-                            <a class="a" href="Main.html">홈으로</a>
+                            <a class="a" href="Main.jsp">홈으로</a>
                             |
-                            <a class="a" href="Login.html">로그인</a>
+                            <a class="a" href="Login.jsp">로그인</a>
                         </div>
                     </div>
                 </form>
