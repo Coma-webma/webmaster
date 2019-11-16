@@ -1,0 +1,100 @@
+﻿- 코스
+CREATE TABLE course (
+	c_idx int auto_increment primary key, 
+	c_user_email VARCHAR(20),
+	c_title VARCHAR(100) NOT NULL,
+	c_content TEXT,
+	c_summary VARCHAR(300),
+	c_public ENUM('공개','비공개'),
+	c_date datetime default now(),
+	c_depth INT,
+	c_group INT,
+	c_sequece INT,
+	FOREIGN KEY (c_user_email) REFERENCES user(u_email)	
+)
+- 모듈
+CREATE TABLE module (
+   	m_idx int auto_increment, 
+   	m_user_email VARCHAR(20),
+   	m_title VARCHAR(100) NOT NULL,
+   	m_content TEXT,
+   	m_summary VARCHAR(300),
+   	m_public ENUM('공개','비공개'),
+   	m_notice VARCHAR(100),
+   	m_together_title VARCHAR(20),
+  		m_view_title VARCHAR(20),
+   	m_cover ENUM('사용함','사용안함'),
+	m_date datetime default now(),
+	m_cidx INT,
+	FOREIGN KEY (m_user_email) REFERENCES user(u_email),
+	FOREIGN KEY (m_cidx) REFERENCES course(c_idx)
+)
+
+- 토픽 
+CREATE TABLE topic (
+	t_idx int auto_increment primary key, 
+	t_user_email VARCHAR(20),
+	t_title VARCHAR(100) NOT NULL,
+	t_content TEXT,
+	t_summary VARCHAR(300),
+	t_public ENUM('공개','비공개'),
+	t_together_title VARCHAR(10),
+  	t_view_title VARCHAR(10),
+	t_cover ENUM('완료','준비중'),
+	t_date datetime default now(),
+	t_midx INT,
+	t_depth INT,
+	t_group INT,
+	t_sequece INT,
+	FOREIGN KEY (t_user_email) REFERENCES user(u_email),
+	FOREIGN KEY (t_midx) REFERENCES module(m_idx)
+)
+
+- 신고
+CREATE TABLE report (
+	r_idx int auto_increment primary key, 
+	r_user_email VARCHAR(50) NOT NULL,
+	r_title VARCHAR(100) NOT NULL,
+	r_suspect VARCHAR(20) NOT NULL ,
+	r_content  VARCHAR(1000) NOT NULL,
+	r_limit INT(4),
+	r_limit_content VARCHAR(100),
+	r_date datetime default now(),
+	r_adminchk ENUM('미확인','확인'),
+	FOREIGN KEY (r_user_email) REFERENCES user(u_email)
+)
+
+- 회원유저
+CREATE TABLE user (
+	u_idx int auto_increment primary key, 
+	u_email VARCHAR(50) UNIQUE NOT NULL,
+	u_nickname VARCHAR(20) UNIQUE NOT NULL,
+	u_pass VARCHAR(20) NOT NULL,
+	u_email_chk ENUM('사용함','사용안함'),
+	u_img VARCHAR(200),
+	u_info VARCHAR(500),
+	u_leave ENUM('탈퇴안함','탈퇴함'),
+	u_count INT(2) NULL DEFAULT '0'
+)
+제재 누르면 업데이트 해서 count 하나씩올리기
+로그인 하는데에 카운터 가 2가되면 로그인을 못하게 메세지를 띄우기
+코스(5),모듈(2),토픽 하위에 대한 db 퀴리설계 방법 찾기
+
+- 댓글달기
+CREATE TABLE reply(
+	re_idx INT AUTO_INCREMENT PRIMARY KEY,
+	re_nickname VARCHAR(20) NOT NULL,
+	re_content VARCHAR(200) NOT NULL,
+	re_date datetime default now(),
+	re_cidx INT NOT NULL,
+	re_midx INT,
+	re_tidx INT,
+	re_depth INT,
+	re_group INT,
+	re_sequece INT,
+	FOREIGN KEY (re_nickname) REFERENCES user(u_nickname),
+	FOREIGN KEY (re_cidx) REFERENCES course(c_idx),
+	FOREIGN KEY (re_midx) REFERENCES course(m_idx),
+	FOREIGN KEY (re_tidx) REFERENCES course(t_idx)
+)
+
