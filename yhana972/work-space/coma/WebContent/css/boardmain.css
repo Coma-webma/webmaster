@@ -1,0 +1,160 @@
+*{
+    margin : 0;
+    padding: 0;
+  
+}
+html, body,nav{
+    height: 100%;
+    min-height: 100%;
+    
+}
+header{
+    width: 100%;
+    height:55px;
+    background-color: #34495e;
+}
+a {
+text-decoration: none;
+color:#ccc;
+}
+li {
+    list-style-type: none;
+}
+a.line1{
+border-right: 1px solid #5f7b97;
+position: relative;
+padding: 0px 20px;
+
+}
+a.line2{
+position: relative;
+padding: 0px 20px;
+
+}
+header div nav ul.topmenu{
+margin-top: 5px;
+font-size: 14px;
+padding-inline-start: 10px;
+}
+div#contant{
+    position: relative;
+}
+.admin_left_nav {
+list-style: none;
+margin:0;
+padding:1px;
+width:200px;
+height:50px;
+}
+.admin_left_nav li {
+display:inline-block;
+color:white;
+margin:5px 0px;
+}
+
+.admin_right_nav {
+position: absolute;
+right:20px;
+display:block;
+top:1px;
+}
+.admin_right_nav li {
+display:inline-block;
+color:white;
+margin:5px 0px;
+}
+div#contant nav#main{
+width: 255px;
+height: 65px;
+background-color: #213245;
+padding: 0 20px;
+position: absolute;
+top: 0;
+left: 0;
+zoom: 1;
+box-sizing: border-box;
+}
+.admin_menu{
+margin:auto;
+font-size: 18px;
+list-style: none;
+}
+.menu_name{
+position: relative;
+display: block;
+line-height: 60px;
+width: 70px;
+height: 65px;
+color:#ccc;
+float:left;
+text-align: center;
+}
+.menu_all{
+width:255px;
+height:50px;
+list-style: none;
+background-color:#ddd;
+padding: 0px 5px 0px 15px;
+position: absolute;
+top: 65px;
+left: 0;
+zoom: 1;
+box-sizing: border-box;
+}
+.menu_all_add p{
+float:left;
+font-size: 14px;
+clear:both;
+color: #35ac68;
+margin: 15px 20px 0px 0px;
+}
+.button1{
+background-color:#bbb ;
+border: none;
+color: white;
+text-align: center;
+display: inline-block;
+font-size: 13px;
+padding: 3px 2px;
+margin: 13px 0px 0px 0px;
+cursor: pointer;
+width: 35px;
+}
+li a.active span{
+color: #3c9 ;
+}
+select.sel{
+ background-color: #bbb;
+ color: white;
+ border: none;
+ font-size: 13.5px;
+ margin: 13px 0px 0px 0px;
+ padding: 3px;
+ width: 70px;
+}
+li a:hover:not(.active) {
+color: white;
+}
+nav#main_bar{
+position: absolute;
+width: 255px;
+height: 1500px;
+background-color: #eee;
+padding: 0 auto;
+top: 110px;
+zoom: 1;
+box-sizing: border-box;
+}
+.main_bar_all {
+    list-style: none;
+    display: block;
+}
+.main_bar_all li {
+    margin-left: 10px;
+    padding:5px;
+    color: black;
+}
+.main_bar_all li:hover{
+    background-color: #ccc;
+    color:#3c9;
+}
