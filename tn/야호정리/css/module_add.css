@@ -180,6 +180,16 @@ fieldset#functions ul li input[type='radio']:checked+label {
     color: #fff;
     background-color: #3c9;
 }
+
+ul li  label:hover{
+    color: #fff;
+    background-color: #3c9;
+}
+
+fieldset#functions ul li input[type='radio']:disabled+label {
+    color: rgb(97, 97, 97);
+    background-color: #eee;
+}
 fieldset#functions ul li label {
     display: block;
     height: 40px;

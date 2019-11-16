@@ -107,3 +107,15 @@ $(function () {
 	});
 
 });
+// 모듈 토픽 페이지 이동1
+$(function(){
+	$("input#function_topic").click(function(){
+	location.href="boardtopicmain.html";
+	});
+});
+$(function(){
+  $("input#function_basic").click(function(){
+	location.href="boardmodulemodify.html";
+  });
+});
+

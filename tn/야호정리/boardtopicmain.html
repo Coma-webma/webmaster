@@ -9,7 +9,6 @@
 <script src="jquery/webmenu.js"></script>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>모듈이름 /토픽목록</title><!-- <%=모듈의 이름 %>-->
@@ -193,11 +192,12 @@
             <fieldset id="functions">
                 <ul>
                     <li>
-                        <input type="radio" id="function_basic" name="function" value>
-                        <label for="function_basic"><a href="boardmodulemodify.html" style="color:black">커버</a></label>
+                        <input type="radio" id="function_basic" name="function" value="basic" >
+                        <label for="function_basic">커버</label>
                     </li>
                     <li>
-                        <label for="function_topic"><a href="boardtopicmain.html" style="color:black">토픽목록</a></label>
+                            <input type="radio" id="function_topic" name="function" value="topic" checked="checked">
+                        <label for="function_topic">토픽목록</label>
                     </li>
                 </ul>
             </fieldset>
@@ -213,7 +213,7 @@
                         <option value="up">비공개</option>
                     </select>
                     <div class="make">
-                        <a href="#" style="color:white">토픽만들기</a>
+                        <a href="boardtopic.html" style="color:white">토픽만들기</a>
                     </div>
                 </div>
                 <table class="a12">

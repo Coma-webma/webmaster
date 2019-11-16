@@ -56,6 +56,11 @@ input[type="radio"] {
     padding: initial;
 }
 fieldset#functions ul li input[type='radio']:checked+label {
+    color:#fff;
+    background-color: #3c9;
+}
+ul li  label:hover{
+    color: #fff;
     background-color: #3c9;
 }
 fieldset#functions ul li label {
