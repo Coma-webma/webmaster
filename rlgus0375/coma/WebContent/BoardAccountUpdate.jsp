@@ -9,8 +9,6 @@
 	String u_email = request.getParameter("u_email");
 	String u_nickname = request.getParameter("u_nickname");
 	String u_pass = request.getParameter("u_pass");
-	String u_pass_new = request.getParameter("u_pass_new");
-	String u_pass_new_re = request.getParameter("u_pass_new_re");
 	String u_email_chk = request.getParameter("u_email_chk");
 	String u_img = request.getParameter("u_img");
 	String u_info = request.getParameter("u_info");
@@ -44,30 +42,26 @@
 
 			if (rs.next()) {
 				sql = "UPDATE user SET u_email=?, u_nickname=?";
-				sql += "u_pass=?, u_pass_new=?, u_pass_new_re=?, u_info=?, u_img=?";
+				sql += "u_pass=?, u_info=?, u_email_chk=?, u_img=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, u_email);
 				pstmt.setString(2, u_nickname);
 				pstmt.setString(3, u_pass);
-				pstmt.setString(4, u_pass_new);
-				pstmt.setString(5, u_pass_new_re);
-				pstmt.setString(6, u_info);
-				pstmt.setString(7, u_img);
+				pstmt.setString(4, u_info);
+				pstmt.setString(5, u_email_chk);
+				pstmt.setString(6, u_img);
 				pstmt.executeUpdate();
 %>
-<script>
-	alert("수정되었습니다.")
-	location.href = "Login.jsp"
-</script>
-<%
-	} else {
-%>
-<script>
-	alert("패스워드를 확인해 주세요.")
-	location.href = "Login.jsp"
-</script>
-<%
+ <script type="text/javascript">
+   function regist(){
+            var frm = document.memForm;
+  if(frm.pwd.value != frm.pwd_re.value){
+                alert("새로운 비밀번호와 새로운 비밀번호 확인에 입력한 값이 다릅니다.");
+                frm.pwd.focus();
+                return false;
+            }
 	}
+  </script>
 		}
 	} catch (Exception e) {
 		out.println(e);
