@@ -1,0 +1,82 @@
+
+        .a8{
+            font-size:1.4em;
+            display:block;
+            margin-left:45px;
+        }
+        .a9{
+            border-bottom:1px solid black;
+            width:900px;
+            height:80px;
+            line-height:60px;
+            text-align: left;
+        }
+        .a10{
+            font-size:1em;
+            float:left;
+            margin-left:15px;
+        }
+        .a11{
+            padding: 10px;
+            font-size:1em;
+            float:right;
+        }
+        .a12{
+            width:900px;
+            height:30px;
+            background-color:rgb(245, 243, 243);
+            border-bottom:1px solid rgb(190, 188, 188);
+            line-height:30px;
+            font-size:0.8em;
+            align-content: center;
+            border-spacing: 0;
+        }
+        .a16{
+            width:40px;
+            height:40px;
+            float:left;
+            background-size:25px;
+        }
+        .chk {/*테이블 제목*/
+            margin-left: 20px;
+            text-align: center;
+            width: 40px;
+        }
+        .main_img {
+            display: none;
+        }
+        .detail{
+            width: 400px;
+            text-align:left;
+        }
+        .topic{
+            width:80px;
+            text-align: center;
+            padding-right:30px;
+        }
+        .public{
+            width:80px;
+            text-align: center;
+        }
+        .date{
+            width:80px;
+            height:40px;
+            background-size:25px;
+            text-align: center;
+        }
+        .del{
+            width:80px;
+            height:40px;
+            background-size:25px;
+            text-align: center;
+        }
+        .border1{
+            background-color:white;
+        }
+        .border1 tr:hover {
+            background-color: #eee;
+            color:black;
+        }
+        strong {
+            color:#666;
+        }
