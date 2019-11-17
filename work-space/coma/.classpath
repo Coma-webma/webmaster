@@ -8,11 +8,20 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/tnbin/OneDrive/바탕 화면/WEB/webmaster/work-space/mariadb-java-client-2.4.2.jar">
+	<classpathentry kind="lib" path="C:/Users/yhana/Coma/git/work-space/javamail-1.4.7/mail.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/tnbin/OneDrive/바탕 화면/WEB/resource/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/yhana/Coma/git/work-space/jaf-1.1.1/activation.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/yhana/Coma/git/work-space/mariadb-java-client-2.4.2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

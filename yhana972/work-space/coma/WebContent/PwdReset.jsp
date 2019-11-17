@@ -10,9 +10,9 @@
 <%@page import="javax.mail.Session"%>
 <%@page import="javax.mail.Authenticator"%>
 <%@page import="java.util.Properties"%>
-<%@page import="java.io.PrintWriter"%>
 <%@page import="coma.SHA256"%>
 <%@page import="coma.Gmail"%>
+<%@ page import="java.io.PrintWriter"%>
 <!-- DB에서 유저가 있는 지 확인해야함. -->
 <%
 	request.setCharacterEncoding("utf-8");
@@ -26,7 +26,7 @@
 	String to = u_email;
 	String subject = "비밀번호 인증을 위한 확인 메일입니다.";
 	String content = "다음 링크에 접속하여 비밀번호 인증 확인을 진행하세요." + "<a href='" + host + "PwdResetCheck.jsp?code="
-			+ new SHA256().getSHA256(to) +"&u_email="+u_email+"'>비밀번호 인증</a>";
+			+ new SHA256().getSHA256(to) + "&u_email=" + u_email + "'>비밀번호 인증</a>";
 
 	// SMTP에 접속하기 위한 정보를 기입합니다.
 	Properties p = new Properties();

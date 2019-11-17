@@ -22,7 +22,6 @@
 			
 			if(rs.next()){
 				session.setAttribute("u_email", u_email);
-				session.setAttribute("u_nickname", rs.getString("u_nickname"));
 				response.sendRedirect("Main_login.jsp");
 			}else{
 				response.sendRedirect("Login.jsp?check=false");
