@@ -129,8 +129,8 @@
                         <label>공개설정</label>
                     </dt>
                     <dd class="dd1">
-                        <label><input type="radio" name="info" value="공개" checked>공개</label>
-                        <label><input type="radio" name="info" value="비공개">비공개</label></p>
+                        <label><input type="radio" name="c_public" value="공개" checked>공개</label>
+                        <label><input type="radio" name="c_public" value="비공개">비공개</label></p>
                     </dd>
                 </dl>
                 <dl>

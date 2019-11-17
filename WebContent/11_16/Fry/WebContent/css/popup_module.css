@@ -1,0 +1,241 @@
+a {
+        text-decoration: none;
+        color: #666;
+}
+
+input, textarea, button {
+    color: #666;
+    font-weight: normal;
+}
+
+div#module_popup{
+    top: 600px;
+    background-color: #fff;
+    z-index: 15;
+}
+div.popup{
+    position: absolute !important;
+    right: -7;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+div.popup_wrapper{
+    background-color: #fff;
+    background-position: left top;
+    background-repeat: repeat-x;
+    overflow: hidden;
+   
+}
+div.header{
+    height: 50px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    text-align: left;
+    border-bottom: solid 1px #666;
+    margin-bottom: 10px;
+}
+.header strong{
+    font-size: 22px;
+    line-height: 50px;
+    padding-left: 17px;
+    font-weight: bold;
+}
+.list_sel{
+    float: left;
+    margin-left: 20px;
+}
+.list_sel1{
+    margin: 10px 0px 30px;
+    width: 80px;
+    height: 30px;
+}
+input.list_text {
+    width: 550px;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 코스 리스트*/
+ div.body div.module_list {
+    height: 300px;
+    float: left;
+    width: 50%;
+ }
+ div.body div.module_list div.scroll_wrapper {
+    margin-right: 20px;
+    overflow: auto;
+    height: 320px;
+}
+div.module_list div.scroll_wrapper ol {
+    list-style-type: none;
+}
+ div.body div.module_list div.scroll_wrapper ol li {
+    cursor: pointer;
+    background-position: 17px 5px;
+    list-style-type: none;
+    padding-left: 30px;
+    height: 25px;
+    line-height: 21px;
+}
+div.body div.module_list div.scroll_wrapper ol li a span{
+    font-size: 13px;
+}
+div.body div.module_list div.scroll_wrapper ol li a span:first-child {
+    display: inline-block;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div.module_list div.scroll_wrapper ol li a span:last-child {
+    color: #000;
+    padding-left: 3px;
+}
+div.module_list div.scroll_wrapper ol li a span {
+    vertical-align: middle;
+}
+div.body div.module_list div.scroll_wrapper ol li.selected a {
+    color: #09f;
+}
+div.body div.module_list div.scroll_wrapper ol li.selected a span:first-child:hover{
+    color: #09f;
+}
+div.body div.module_list div.scroll_wrapper ol li a  span:first-child:hover {
+    color:rgb(50, 104, 255);
+}
+div.module_list div.scroll_wrapper ol li a {
+    color: #999;
+    display: flex;
+    text-decoration: none;
+    width: 250px;
+}
+/**view단 */
+div.body div.module_view {
+    width: 50%;
+    float: right;
+}
+div#module_previewer span.empty {
+    color: #bbb;
+    display: block;
+    font-size: 14px;
+    padding-top: 35px;
+}/* 아무것도 선택하지 않았을 때 있음 */
+div#module_previewer div.full strong {
+    color: #050505;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+strong a:hover{
+    color: #000;
+}
+
+div.body div.module_view div#module_previewer {
+    height: 265px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+div#module_previewer div.full ul li:first-child img {
+    background-color: #eee;
+    padding: 0 !important;
+} div#module_previewer div.full ul {
+    list-style-type: none;
+    margin-left: 48px !important;
+    margin-top: 9px;
+    position: relative;
+}
+ div.body div.module_view div#module_previewer div.full ul li:first-child {
+    position: absolute;
+    left: -48px;
+    top: 0;
+}
+div#module_previewer div.full ul li {
+    display: inline-table;
+    line-height: 20px;
+    list-style-type: none;
+    font-size: 13px;
+    color: #666;
+}
+div#module_previewer div.full ul li:first-child img {
+    background-color: #eee;
+    padding: 0 !important;
+}
+div.body div.module_view div#module_previewer div.full ul li:nth-child(2):after,  div.body div.module_view div#module_previewer div.full ul li:nth-child(4):after {
+    content: ', ';
+}
+ div.body div.module_view div#module_previewer div.full {
+    text-align: left;
+}
+div.module_view div#module_previewer div.full summary {
+    margin-top: 20px;
+    height: 150px;
+    overflow-y: auto;
+    line-height: 1.3em;
+    font-size: 13px;
+}
+div.module_view form.tail {
+    padding-bottom: 9px;
+    margin-right: 15px;
+    text-align: center;
+}
+ div.body form {
+    margin-bottom: 20px;
+}
+div.body div.module_view form.tail button[disabled]{
+    background-color: #ddd;
+    cursor: default;
+}
+
+div.body div.module_view form.tail button.submit {
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 0;
+    text-align: center;
+    width: 150px;
+    font-weight: normal;
+}/*   cursor: pointer;  background-color: #8fcada;*/
+a#current_module_link{
+    color: #666;
+    box-shadow: none;
+}
+a#current_module_link:hover{
+    color: #000;
+}
+#module_connect_status{
+    color:#666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.close{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: url(../img/navber/close_x.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    font-size: 1px;
+    text-indent: -600%;
+}

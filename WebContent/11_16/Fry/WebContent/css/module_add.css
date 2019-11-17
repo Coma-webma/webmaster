@@ -129,8 +129,7 @@ div.btn_select{
     width: 680px;
 }
 div.btn_select2{
-    margin: 0 5px;
-    display: inline-block;
+    margin: 0 2em;
 }
 button.btn{
     width: 125px;
@@ -139,7 +138,7 @@ button.btn{
     color: white;
     background-color: #bbb;
     border: 0;
-    cursor: pointer;
+    cursor: pointer; 
 }
 button.save{
     background-color: #3c9;

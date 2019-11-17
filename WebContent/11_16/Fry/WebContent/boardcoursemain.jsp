@@ -10,6 +10,7 @@
 	request.setCharacterEncoding("UTF-8"); // 	request 클라이언트 -> 서버
 	String c_idx = "";
 	String c_title = "";
+	String c_public = "";
 	if (request.getParameter("c_idx") != null) {
 		c_idx = request.getParameter("c_idx");
 	}
@@ -107,8 +108,8 @@
 					</select>
 				</p>
 				<p class="a11">
-					<label><input type="checkbox" value="공개" checked>공개</label>
-					<label><input type="checkbox" value="비공개" checked>비공개</label>
+					<label><input name="c_public" type="checkbox" value="공개" checked>공개</label>
+					<label><input name="c_public" type="checkbox" value="비공개" checked>비공개</label>
 				</p>
 			</div>
 			<table class="a12">
@@ -128,13 +129,14 @@
 								while (rs.next()) {
 									c_title = rs.getString("c_title");
 									c_idx = rs.getString("c_idx");
+									c_public = rs.getString("c_public");
 									String c_date = rs.getString("c_date").substring(0, 10);
 					%>
 					<tr>
 						<td class="chk"><input type="checkbox"></td>
 						<td class="main_img">대표이미지</td>
 						<td class="detail"><a href="boardcoursemodify.jsp?c_idx=<%=rs.getString("c_idx")%>"><strong><%=c_title%></strong></a></td>
-						<td class="public">●</td>
+						<td class="public"><%= c_public %></td>
 						<td class="public"><%=c_date%></td>
 						<td class="del"><a href="boardDell.jsp?idx=<%=rs.getString("c_idx")%>&idx_dell=course">삭제</a></td>
 					</tr>

@@ -17,6 +17,7 @@ hgroup{
     background-repeat: no-repeat;
     background-position:  2px -32px;
     padding-left: 35px;
+    
 }
 h2{
     height: 60px;
@@ -187,5 +188,3 @@ fieldset#functions ul li label {
 label {
     cursor: pointer;
 }
-
-

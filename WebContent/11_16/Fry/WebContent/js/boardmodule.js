@@ -18,6 +18,8 @@ function sendit(){
    }else{
 	   return true;
    }
+
+   
    /*
    if(frm.m_together_title.value == ""){
       alert("공동공부 제목을 입력하세요.")

@@ -187,8 +187,7 @@
                         <label>라이센스</label>
                     </dt>
                     <dd class="dd1">
-                        <input type="checkbox" name="licence" value="1">
-                        <label>오픈 라이센스 사용에 동의합니다.</label>
+                        <label><input type="checkbox" value="1">오픈 라이센스 사용에 동의합니다.</label>
 
                     </dd>
                 </dl>
