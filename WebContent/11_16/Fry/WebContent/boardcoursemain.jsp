@@ -133,11 +133,10 @@
 					<tr>
 						<td class="chk"><input type="checkbox"></td>
 						<td class="main_img">대표이미지</td>
-						<td class="detail"><a
-							href="boardcoursemodify.jsp?c_idx=<%=rs.getString("c_idx")%>"><strong><%=c_title%></strong></a></td>
+						<td class="detail"><a href="boardcoursemodify.jsp?c_idx=<%=rs.getString("c_idx")%>"><strong><%=c_title%></strong></a></td>
 						<td class="public">●</td>
 						<td class="public"><%=c_date%></td>
-						<td class="del">삭제</td>
+						<td class="del"><a href="boardDell.jsp?idx=<%=rs.getString("c_idx")%>&idx_dell=course">삭제</a></td>
 					</tr>
 					<%
 						}

@@ -3,9 +3,10 @@
 <%@ page import="java.sql.*" %>
 <%    
 	request.setCharacterEncoding("UTF-8");	// 	request 클라이언트 -> 서버
-	String c_title = request.getParameter("c_title");
-	String c_content = request.getParameter("c_content");
-	String c_summary = request.getParameter("c_summary");
+	String idx = request.getParameter("idx");
+	String idx_dell = request.getParameter("idx_dell");
+	String idx_name = ""; // 넘어오는 값
+	String jsp = ""; // 이동
 	
 	Connection conn = null;	// db연결 시작
 	String sql = "";
@@ -16,16 +17,17 @@
 		Class.forName("org.mariadb.jdbc.Driver");
 		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/coma", "root", "1234");
 		if(conn != null) {
-			sql = "insert into course(c_title,c_content,c_summary)";
-			sql += "values (?,?,?)";
-			
+			switch(idx_dell){ // 여러 게시판의 삭제
+			case "course": idx_name = "c_idx"; jsp="boardcoursemain.jsp"; break;
+			case "module": idx_name = "m_idx"; jsp="boardmodulemain.jsp"; break;
+			case "topic": idx_name = "t_idx"; jsp="boardtopicmain.jsp"; break;
+			}
+			sql = "delete from "+idx_dell+" where "+idx_name+" =? ";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, c_title);
-			pstmt.setString(2, c_content);
-			pstmt.setString(3, c_summary);
+			pstmt.setString(1, idx);
 			pstmt.executeUpdate();	// 업데이트
 
-			response.sendRedirect("boardcoursemain.jsp");
+			response.sendRedirect(jsp);
 				
 			pstmt.close();
 			conn.close();
@@ -42,5 +44,6 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 </body>
 </html>

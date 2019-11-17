@@ -173,7 +173,8 @@
 					<div class="btn_select2">
 						<button type="submit" class="btn save">저장</button>
 						<button type="button" class="btn" id="cancel">취소</button>
-						<button type="button" class="btn" id="delete">삭제</button>
+						<!-- <button type="button" class="btn" id="delete">삭제</button> -->
+						<button type="button" class="btn save" OnClick="window.location='boardDell.jsp?idx=<%=rs.getString("t_idx")%>&idx_dell=topic'">삭제</button>
 						<!-- 처음에는 없다가 나중에 나타남 -->
 						</div>
 					</div>

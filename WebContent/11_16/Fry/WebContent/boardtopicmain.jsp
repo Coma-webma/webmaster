@@ -153,15 +153,16 @@
 
 									while (rs2.next()) {
 										t_title = rs2.getString("t_title");
+										t_idx = rs2.getString("t_idx");
 										t_date = rs2.getString("t_date").substring(0, 10);
 						%>
 						<tr>
 							<td class="chk"><input type="checkbox"></td>
 							<td><a href="boardtopicmodify.jsp?t_idx=<%=rs2.getString("t_idx")%>"><strong><%=t_title%></strong></a></td>
 							<td class="public1">●</td>
-							<th class="public1">●</th>
+							<td class="public1">●</td>
 							<td class="date"><%=t_date%></td>
-							<th class="del">삭제</th>
+							<td class="del"><a href="boardDell.jsp?idx=<%=rs2.getString("t_idx")%>&idx_dell=topic">삭제</a></td>
 						</tr>
 						<%
 							}

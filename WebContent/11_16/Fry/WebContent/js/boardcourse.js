@@ -20,3 +20,7 @@ function sendit(){
    }
    	
 }
+
+function Del(c_idx) {
+	location.href="Del.jsp?c_idx="+ c_idx;
+}

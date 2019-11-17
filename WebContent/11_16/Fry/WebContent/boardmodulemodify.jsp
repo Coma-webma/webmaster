@@ -211,7 +211,8 @@
 							<button type="submit" class="btn save">저장</button>
 						</div>
 						<div class="btn_select2">
-							<button type="submit" class="btn save">삭제</button>
+							<!-- <button type="submit" class="btn save">삭제</button> -->
+							<button type="button" class="btn save" OnClick="window.location='boardDell.jsp?idx=<%=rs.getString("m_idx")%>&idx_dell=module'">삭제</button>
 						</div>
 					</div>
 				</form>
