@@ -42,7 +42,10 @@ a.line1:hover, a.mainline:hover{
 }
 a.line1, a.mainline{
 	position: relative;
-	padding: 0px 20px 0px 40px;
+	padding: 0px 20px 0px 20px;
+}
+a.mainline{
+	padding-left: 40px;
 }
 a.line1{
 	border-right: 1px solid #5f7b97;

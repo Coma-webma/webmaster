@@ -1,4 +1,4 @@
-/*공동공부 팝업 관련 CSS*/
+/*怨듬룞怨듬� �뙘�뾽 愿��젴 CSS*/
 div#popup_together{
     top: 155px;
     background-color: #fff;
@@ -170,7 +170,7 @@ button.join{
     position: absolute;
     top: 15px;
     right: 15px;
-    background: url(../img/cancel.png);
+    background: url(../img/dasktop/cancel.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center center;

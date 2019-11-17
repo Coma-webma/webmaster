@@ -13,7 +13,7 @@ hgroup{
     height: 40px;
 }
 #img1 > h2{
-    background-image: url(../img/icon_title.png);
+    background-image: url(../img/board/icon_title.png);
     background-repeat: no-repeat;
     background-position:  2px 18px;
     padding-left: 35px;
@@ -94,9 +94,10 @@ dd.dd1{
     margin-top: 10px;
 }   
 dd.dd2{
-    width: 400px;
+    width: 600px;
     height: 40px;
     margin-top: 10px;
+    font-size: 13px;
 }   
 a.module{
     background-color: white;

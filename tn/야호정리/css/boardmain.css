@@ -132,10 +132,12 @@ text-align: center;
 display: inline-block;
 font-size: 13px;
 padding: 3px 2px;
-margin: 13px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
 cursor: pointer;
 width: 35px;
 }
+
+
 li a.active span{
 color: #3c9 ;
 }
@@ -173,4 +175,17 @@ box-sizing: border-box;
 .main_bar_all li:hover{
     background-color: #ccc;
     color:#3c9;
+}
+
+.button2{   
+    background-color:#bbb ;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    padding: 3px 2px;
+    margin: 0px 0px 0px 60px;
+    cursor: pointer;
+    width: 35px;
 }

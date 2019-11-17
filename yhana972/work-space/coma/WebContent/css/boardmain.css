@@ -3,6 +3,10 @@
     padding: 0;
   
 }
+a{
+    text-decoration: none;
+    color:#ccc;
+}
 html, body,nav{
     height: 100%;
     min-height: 100%;
@@ -13,24 +17,36 @@ header{
     height:55px;
     background-color: #34495e;
 }
-a {
-text-decoration: none;
+a.mainline {
 color:#ccc;
 }
 li {
     list-style-type: none;
 }
-a.line1{
-border-right: 1px solid #5f7b97;
-position: relative;
-padding: 0px 20px;
-
+span.line1{
+	border-right: 1px solid #5f7b97;
+	position: relative;
+	padding: 0px 20px;
+	color:#ccc;
 }
-a.line2{
-position: relative;
-padding: 0px 20px;
-
+span.line2{
+	position: relative;
+	padding: 0px 20px;
+	color:#ccc;
 }
+nav span:hover{
+	color: white;
+	cursor: pointer;
+}
+ a.mainline:hover{
+	color: white;
+	cursor: pointer;
+}
+ a.mainline{
+	position: relative;
+	padding: 0px 20px 0px 40px;
+}
+
 header div nav ul.topmenu{
 margin-top: 5px;
 font-size: 14px;

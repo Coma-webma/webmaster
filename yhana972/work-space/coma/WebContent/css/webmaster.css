@@ -5,6 +5,12 @@
     outline: 0;
 	height: 100%;
 }
+div {
+    display: block;
+}
+ol{
+	list-style: none;
+}
 
 .all {
 	margin: 0 auto;
@@ -30,26 +36,34 @@ span:hover{
 	cursor: pointer;
 }
 
-a.line1:hover, a.line2:hover{
+a.line1:hover, a.mainline:hover{
 	color: white;
 	cursor: pointer;
 }
+a.line1, a.mainline{
+	position: relative;
+	padding: 0px 20px 0px 40px;
+}
 a.line1{
 	border-right: 1px solid #5f7b97;
-	position: relative;
-	padding: 0px 20px;
 }
-a.line2{
-	position: relative;
-	padding: 0px 20px;
+a.img{
+	background-repeat: no-repeat;
+	background-image: url(../img/navber/icon_allview.png);
+	margin-top: 1px;
+}
+a.img:hover{
+	background-repeat: no-repeat;
+	background-image: url(../img/navber/icon_allview_hover.png);
+}
 
-}
 a.line3{
 	border-right: 1px solid #5f7b97;
 	position: relative;
 	padding: 0px 30px;
 	
 }
+
 a.line4{
 	position: relative;
 	padding: 0px 30px;
@@ -64,29 +78,20 @@ p.title1 a{
 
 header {
 	width:100%;
-	height:210px;
 	background-color: #4d6c8b;
 }
+
 header div nav ul.topmenu{
 	margin-top: 5px;
 	font-size: 14px;
 	padding-inline-start: 10px;
 }
-
 header nav div ul.topmenu1{
 	margin-top: 5px;
 	font-size: 17px;
 }
 
-.line2 ul li { /*클릭시 하위메뉴*/
-	display:none;
-	font-size: 14px;
-	background-color: red;
-	padding:10px;
-}
-nav ul li ul {
-	display :none;
-}
+
 #trigger:checked {
 	display: block;
 }
@@ -98,10 +103,26 @@ nav ul li ul {
 	width:200px;
 	height:50px;
 }
-.left_nav1 li {
-	display:inline-block;
-	color:white;
-	margin:6px 0px;
+.left_nav1 >ul.topmenu> li {
+	display: inline-block;
+	float: left;
+	margin-top: 5px;
+}
+
+.left_nav1 #to_home {
+    padding-right: .5em;
+	margin-top: .5em;
+
+}
+a.img {
+    line-height: 17px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    overflow: hidden;
+    text-indent: 100em;
+    width: 17px;
 }
 
 .right_nav1 {
@@ -118,7 +139,6 @@ nav ul li ul {
    
     
 }
-
 .title1 {
 	text-align: center;
 	font-size: 30px;
@@ -136,7 +156,6 @@ nav ul li ul {
 	width:100%;
 	background-color: #4d6c8b;
 	text-align: center;
-	height:10px;
 }
 .main_nav1 li {
 	display:inline-block;
@@ -152,32 +171,38 @@ nav ul li ul {
 }
 .dir_main {
 	width:980px;
-	height: 17px;
+	height: 22px;
+	line-height: 22px;
 	margin: 0 auto;
 	padding:10px;
+	position: relative;
+    vertical-align: middle;
 }
-.dir_main_left {
-	display: inline;
+.dir_main #breadcrumb_line {
+    padding-left: 15px;
+	color: #999;
+	cursor: auto;
 }
-
+.dir_main #breadcrumb_line .divider {
+    color: #bbb;
+    padding: 0 5px;
+}
 .middle {
 	width:1000px;
 	margin:0 auto;
 	border: 1px solid #ccc;
 }
-
-.revious {
-	width:70px;
-	height:40px;
-	border: 1px solid #ccc;
-	display: inline-block;
-	text-align: center;
-	padding-bottom: 5px;
-}
 .revious_next { /*이전 다음*/
 	width:100%;
 	height:45px;
-	border: 1px solid #ccc;
+	background-color: #eee;
+}
+.revious {
+	width:70px;
+	height:40px;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 5px;
 }
 .revious_next_right {
 	height:40px;
@@ -187,24 +212,32 @@ nav ul li ul {
 .next {
 	width:70px;
 	height:40px;
-	border: 1px solid #ccc;
+	border: 1px solid white;
 	display: inline-block;
 	text-align: center;
 	padding-bottom: 5px;
+}
+div.next  a {
+	color: #333;
+	padding: 15px 10px 10px 10px;
+}
+div.next:hover  a:hover {
+	background-color: #adadad;
 }
 
 .comment1 {/*댓글시작*/
 	width:96%;
 	height:140px;
-	border:1px solid #ccc;
+	border-block-end: 1px solid #ccc;
 	padding-top:20px;
 	padding-left:40px;
 }
 .comment1_1 {
 	vertical-align:top;
 	display: inline-block;
-	width: 60px;
-	height:60px;
+	width: 40px;
+	height:40px;
+	margin-top: 20px;
 	border:1px solid blue;
 }
 .comment1_2 {
@@ -220,418 +253,124 @@ textarea {
 	height:100%;
 	resize: none;
 }
-
+div.comment1 div.comment1_button {
+    display: block;
+}
 .comment1_button {
-	margin-top:10px;
-	margin-left:820px;
+    margin-top: 10px;
+    margin-left: 770px;
+    padding-top: 5px;
+}
+div.comment1 div.comment1_button button {
+    background-color: #3c9;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    height: 29px;
+    margin: 0;
+    line-height: 29px;
+    padding: 0 25px;
 }
 
 .comment1_button button {
 	padding : 10px;
 }
 
-.comment2 {/*댓글목록시작*/
-	width:96%;
-	height:100px;
-	border:1px solid #ccc;
-	padding-top:20px;
-	padding-left:40px;
+ol#comment_list {/*댓글목록시작*/
+	line-height: 1.4em;
+	margin-block-end: 0px;
+	margin-block-start: 0px;
+	padding-inline-start: 0px;
 }
-.comment2_1 {
-	vertical-align:top;
-	display: inline-block;
-	width: 40px;
-	height:40px;
-	border:1px solid blue;
+ol#comment_list>li {
+    position: relative;
 }
-.comment2_2 {
-	vertical-align:top;
-	display: inline-block;
-	padding-left:40px;
-}
-.comment2_3 {
-	vertical-align:middle;
-	display: inline-block;
-	padding-left:20px;
-	font-size: 11px;
-}
-.comment2_4 {
-	padding-left:20px;
-	font-size: 11px;
-	margin-left: 70px;
-}
+.comment2 {
+	padding: 20px 0px 30px 40px;
+	}
+	.comment2_1 {
+		vertical-align:top;
+		display: inline-block;
+		width: 40px;
+		height:40px;
+		border:1px solid blue;
+	}
+	.comment2_2 {
+		vertical-align:top;
+		display: inline-block;
+		padding-left:40px;
+	}
+	.comment2_3 {
+		vertical-align:middle;
+		display: inline-block;
+		padding-left:20px;
+		font-size: 11px;
+	}
+	.com_buttons{
+		position: absolute;
+		right: 25px;
+		top: 20px;
+		color: #ddd;
+	}
+	div.com_buttons a {
+		display: inline-block;
+		margin: 0 1px;
+		padding: 1px 3px;
+		color: #999;
+		font-size: 13px;
+		line-height: 19px;
+	}
+	li div.com_buttons a:hover{
+		color: #000;
+		background-color: #ddd;
+	}
+	div.com_buttons a .ico {
+		margin: 1px;
+		vertical-align: bottom;
+	}
+	.icon .ico.ico_reply {
+		background-position: 0 -500px;
+	}
+	.icon .ico {
+		display: inline-block;
+		background-image: url(../img/navber/icon_gray.png);
+		background-position: -25px -25px;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
 
+	}
+	.icon:hover span.ico{
+		background-image: url(../img/navber/icon.png);
+	}
+	ol#comment_list div.comment2_4 {
+		width: auto !important;
+		margin-right: 20px !important;
+	}
+	.comment2_4 {
+		padding-left:20px;
+		font-size: 13px;
+		margin-left: 70px;
+		padding-right: 40px;
+}
 .footer {/*더보기*/
 	width:96%;
 	height:20px;
-	border:1px solid #ccc;
 	padding:20px;
 	text-align: center;
-}
-
-.comment1:hover, .comment2:hover, .footer:hover, .revious:hover, .next:hover{
 	background-color: #eee;
-}
-
-.menubar li a{/*하위메뉴표시*/
-	color:#cccccc;
-	display:block;
-	font-weight:normal;
-	text-align:center;
-	text-decoration:none;
-}
-
-.menubar li a:hover, .menubar ul li:hover a{
-	color:#eee;
-	text-decoration:none;
-}
-
-.menubar li ul{
-	display:none;
-	height:auto;
-	padding: 5px 5px;
-	margin: 0px;
-	border:0px;
-	position:absolute;
-	z-index:200;
-}
-
-.menubar li:hover ul{
-	display:block;
-}
-
-.menubar li li {
-	background-color: #fff;
-	display:block;
-	float:none;
-	margin:0px;
-	padding:0px;
-}
-
-.menubar li:hover li a{
-	background:none;
-}
-
-.menubar li ul a{
-	display:block;
-	height:30px;
-	font-size:12px;
-	font-style:normal;
-	margin:0px;
-	padding:10px 10px 0px 15px;
-	text-align:left; 
-}
-
-.menubar li ul a:hover, .menubar li ul li:hover a{
-	background: #bbb;
-	border:0px;
-	text-decoration:none;
-}
-
-menu {
-	display: block;
-	list-style-type: disc;
-	margin-block-start: 0px;
-	margin-block-end: 0px;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	padding-inline-start: 5px;
-}
-
-menu > li > a{
-	color: black;
-}
-
-/* 테이블의 기본 모양 */
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-div.submenu{
-	position: absolute !important;
-    top: 40px;
-	right: -7px;
-	width: 530px;
-	z-index: 7;
-
-	-moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
-    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.3);
-    -o-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);
-    box-shadow:0 0 5px rgba(0,0,0,0.3)
-}
-
-.layerbox{
-	margin: 0 auto;
-}
-
-div#mycontent_submenu table,
-div#act_submenu table,
-div#my_submenu table {
-    width: 100%;
-    height: 100%;
-}
-
-div#mycontent_submenu table thead th,
-div#act_submenu table thead th,
-div#my_submenu table thead th {
-    width: 50%;
-    text-align: left;
-	border-bottom: 1px solid #ddd;
-	height: 36px;
-}
-
-div#mycontent_submenu table thead th:first-child,
-div#act_submenu table thead th:first-child,
-div#my_submenu table thead th:first-child{
-    border-right: 1px solid #ccc;
-}
-
-div#mycontent_submenu table thead th .subtitle,
-div#act_submenu table thead th .subtitle,
-div#my_submenu table thead th .subtitle {
-    color: #666;
-    font-size: 11px;
-    float: right;
-    padding: 0 12px 0 0;
-    font-weight: normal;
-}
-
-div#mycontent_submenu table thead th .controls {
-    float: right;
-    line-height: 39px;
-    padding-right: 6px;
-    margin-top: -1px;
-}
-
-div#mycontent_submenu table thead th .controls a {
-    font-size: .95em;
-    margin: 0 0 0 1px;
-    padding: 4px 6px;
-    font-weight: normal;
-}
-
-div#mycontent_submenu table thead th .controls a.setting,
-div#mycontent_submenu table thead th .controls a.add{
-    background-color: #eee;
-    color: #666 !important;
-}
-
-div#mycontent_submenu table thead th span.inner,
-div#act_submenu table thead th span.inner,
-div#my_submenu table thead th span.inner {
-    display: inline-block;
-    font-size: 15px;
-    padding-left: 15px;
-    color: #000;
-}
-
-div#mycontent_submenu table tbody td,
-div#act_submenu table tbody td,
-div#my_submenu table tbody td {
-    vertical-align: top;
-    width: 50%;
-}
-
-div#mycontent_submenu table tbody td:first-child,
-div#act_submenu table tbody td:first-child,
-div#my_submenu table tbody td:first-child {
-    border-right: .1em solid #ddd;
-}
-
-div#mycontent_submenu table tbody td div#p_course_nest ul {
-    display:block;
-	width: 250px;
-	padding: 3px;
-}
-
-div#mycontent_submenu table tbody td div#p_course_nest ul li {
-    border-bottom: 1px solid #eee;
-    border-right: 0;
-    vertical-align: middle;
-    padding: 0 15px;
-}
-
-
-
-div#mycontent_submenu table tbody td div#p_module_nest .divider {
-    color: #000;
-    padding-left: 1em;
-    font-weight: bold;
-    background-color: #f8f8f8;
-}
-
-div#mycontent_submenu table tbody td div#p_course_nest,
-div#mycontent_submenu table tbody td div#p_module_nest,
-div#act_submenu table tbody td div#p_study_nest,
-div#act_submenu table tbody td div#p_marking_nest{
-    max-height: 420px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -moz-box-shadow: inset 0 0 8px #fff;
-    -webkit-box-shadow: inset 0 0 8px #fff;
-    box-shadow: inner 0 0 8px #fff;
-}
-
-div#mycontent_submenu table tbody td div#p_module_nest menu,
-div#act_submenu table tbody td div#p_study_nest menu{
-    padding-bottom: 24px;
-	padding-right: 5px;
-	padding-left: 1px;
-}
-
-menu.menu li {
-    height: auto;
-    line-height: 1.5em;
-    margin-bottom: 18px;
-    padding-left: 0;
-}
-menu.menu2{
- 	 list-style-type: circle;
-    border-bottom: 1px solid #ccc;
-}
-menu.menu2 li{
-	list-style-type: circle;
-	padding-left: 10px;
-    line-height: 30px;
-}
-
-div#mycontent_submenu table tbody td div#p_module_nest menu li,
-div#act_submenu table tbody td div#p_study_nest menu li{
-    list-style-type: none;
-    padding-left: 10px;
-    line-height: 30px;
-}
-
-div#mycontent_submenu table tbody td div#p_course_nest ul li a,
-div#mycontent_submenu table tbody td div#p_module_nest menu li a,
-div#act_submenu table tbody td div#p_study_nest menu li a{
-    background-image: none;
-    color: #000;
-	display: block;
-    font-size: 14px;
-    margin-right: auto;
-    width: 235px;
-    white-space: nowrap;
-    overflow: hidden;
-	text-overflow: ellipsis;
-	background-repeat: no-repeat;
-    background-position: left 8px;
-}
-
-
-div#niName_submenu div.table menu li a {
-    color: #000 !important;
-    display: block;
-    font-size: 13px;
-    height: 2em;
-    line-height: 2em;
-    padding-left: 10px;
-    padding-right: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-div#act_submenu table tbody td div#p_marking_nest menu li a,
-div#mycontent_submenu table tbody td div#p_module_nest menu li a {
-    color: #777;
-	display: block;
-	background-image: url(../img/navber/list_01.gif);
-    background-repeat: no-repeat;
-    background-position: left 8px;
-    padding-left: 1em;
-    width: 250px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-div.archieved{
-	margin-top: 7px;
-    margin-left: 1px;
-}
-
-span.percentage {
-    color: #666;
-    float: right;
-    font-size: 10px;
-    font-family: arial,sans-serif;
-    line-height: 8px;
-}
-
-span.graph {
-    background-color: #eee;
-    display: block;
-    overflow: hidden;
-    width: 202px;
-}
-
-span.bar {
-    background-color: #77c2d0;
-    display: block;
-    height: 8px;
-	margin-right: auto;
 	
 }
-
-.pin{
-	background-image: url(../img/navber/pin_layer.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    z-index: 15;
+.footer a{
+	color: #000;
 }
-.pin_top{
-	background-position: bottom left;
-    top: -24.5px;
-    left: 470px;
+.footer:hover{
+	background-color: #bbb;
 }
 
-li.selected > span{
-	color: white;
-} 
-
-menu > li:hover{
+.comment2:hover, .revious:hover, .next:hover{
 	background-color: #f8f8f8;
 }
 
-/* 참여활동 */
 
-li.selected div.submenu {
-    display: block;
-}
-div#niName_submenu {
-    right: 0;
-    width: 85px;
-}
-
-.submenu table, .submenu .table {
-    background-color: #fff;
-    position: relative;
-    text-align: left;
-    border: 1px solid #ccc;
-}
-
-div#niName_submenu div.pin {
-    left: 25px;
-}
-
-div.table > menu >li > a:hover{
-	background-color: #eee;
-}
-
-div.table > menu >li{
-	width: 83px;
-
-}
-div.table > menu{
-	padding-inline-start: 0px;
-}
-menu.menu >li , menu.menu2 > li, menu.menu3 > li{
-	margin: 0px 0px 0px;
-}
-	
-	
-	
