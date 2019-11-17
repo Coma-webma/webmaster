@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
+
 <!DOCTYPE html>
 <html lang="ko">
 	<head>
@@ -46,8 +47,14 @@
         </div>
         <article>
                 <hgroup>
-                   <iframe src="list01_01.jsp" style="width: 100%; height: 700px; margin-left: 260px" frameborder="0" name="if"></iframe>
+                   <iframe id="ifrm" src="list01_01.jsp" style="width: 100%; height: 700px; margin-left: 260px" frameborder="0"></iframe>
                 </hgroup>     
         </article>
     </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    	var iframe = document.getElementById('ifrm').contentWindow;
+		iframe.
+	</script>
 </html>

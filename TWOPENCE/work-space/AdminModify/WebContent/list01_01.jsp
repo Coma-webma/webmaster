@@ -31,6 +31,8 @@
    ResultSet rs = null;
    StringBuffer sql = new StringBuffer();
    int index = 0;
+   
+   String check = request.getParameter("check");
 
    try{
 	   Class.forName("org.mariadb.jdbc.Driver");
@@ -49,38 +51,41 @@
 	      	<tr>
 	      		<form name="Updateform" method="post" action="list01_Update.jsp">
 					<td><%= u_email %></td>
+					<input name="u_email" type="hidden" value="<%= u_email %>">
 					<td><%= u_nickname %></td>
 					<td><%= u_leave %></td>
 					<td><input type="submit" value="경고하기"></td>
 					<td><progress value=<%= u_count %> max="2"></progress></td>
 					<input name="u_count" type="hidden"  value="<%= u_count %>">
-					<input name="index" type="hidden" value="<%= index %>">
+				</form>
 	        </tr>
 <%
        	} /* end of while */
 %>
-		</form>
+		
 	</table>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-			<script>				
-				$(function () {
-					$(":submit").click(function () {
-						var warnCon = window.confirm('정말로 경고를 주시겠습니까?');
-						if(warnCon){
- 							/* var warnBtn = $(this);
-							var tr = warnBtn.parent().parent();
-							var idx = 0;
-							idx = tr.index(); 
-							row_idx = $(this).parent().parent().index();
-							alert(row_idx);
-							*/
-						}else{
-							return false;
-						}
-					});
-				});
-			</script>
-			
+ 		<script>				
+			$(":submit").click(function () {
+				location.reload();
+				/* var warnCon = window.confirm('정말로 경고를 주시겠습니까?');
+				if(warnCon){
+					var warnBtn = $(this);
+					var tr = warnBtn.parent().parent();
+					var idx = 0;
+					idx = tr.index(); 
+					row_idx = $(this).parent().parent().index();
+					alert(row_idx);
+					
+					
+					return true;
+				}else{
+					return false;
+				} */
+			});
+		</script>
+
+		<%if("false".equals(check))%><script>alert("경고 횟수는 최대 2번입니다.");</script>
 <%
 	
    	} catch (ClassNotFoundException e) {
