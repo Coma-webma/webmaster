@@ -8,6 +8,11 @@
 <%@ page import="java.sql.*"%>
 <%
 	request.setCharacterEncoding("UTF-8"); // 	request 클라이언트 -> 서버
+	String c_idx = "";
+	String c_title = "";
+	if (request.getParameter("c_idx") != null) {
+		c_idx = request.getParameter("c_idx");
+	}
 
 	Connection conn = null; // db연결 시작
 	String sql = "";
@@ -75,7 +80,7 @@
                     <ul class="main_bar_all">
 						<%
 							while (rs.next()) {
-										String c_title = rs.getString("c_title");
+										c_title = rs.getString("c_title");
 						%>
 						<a href="boardcoursemodify.jsp">
 							<li>▶ <%=c_title%></li>

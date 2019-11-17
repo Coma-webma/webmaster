@@ -1,27 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*"%>
-<%
-	request.setCharacterEncoding("UTF-8"); // 	request 클라이언트 -> 서버
-	String c_idx = "";
-	String c_title = "";
-	if (request.getParameter("c_idx") != null) {
-		c_idx = request.getParameter("c_idx");
-	}
-
-	Connection conn = null; // db연결 시작
-	String sql = "";
-	PreparedStatement pstmt = null;
-	ResultSet rs = null;
-
-	try {
-		Class.forName("org.mariadb.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/coma", "root", "1234");
-		if (conn != null) {
-			sql = "select *from course";
-			pstmt = conn.prepareStatement(sql);
-			rs = pstmt.executeQuery();
-%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,126 +28,16 @@
 					<ul class="topmenu">
 						<li><a href="dec.jsp" class="line1"
 							onclick="popup(this.href,620,500,'scroll'); return false;">신고하기</a></li>
-						<li id="a"><span class="line1">내컨텐츠</span>
-							<div id="mycontent_submenu" class="submenu layerbox"
-								style="display: none;">
-								<div class="pin pin_top"></div>
-								<table>
-									<thead>
-										<tr>
-											<th class="course"><span class="inner">코스</span>
-												<div class="controls">
-													<a class="setting" href="">설정</a> <a class="add" href="">추가</a>
-												</div></th>
-											<th class="module"><span class="inner">모듈</span>
-												<div class="controls">
-													<a class="setting" href="">설정</a> <a class="add" href="">추가</a>
-												</div></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="course">
-												<div id="p_course_nest" class="scrollbox">
-													<ul>
-														<li><a href="">코스1</a></li>
-													</ul>
-												</div>
-											</td>
-											<td class="module">
-												<div id="p_module_nest" class="scrollbox">
-													<div class="divider">소유중인 모듈</div>
-													<menu class="menu3">
-														<li><a href="">모듈 2</a></li>
-														<li><a href="">모듈 2</a></li>
-													</menu>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div></li>
-						<li id="b"><span class="line1" href=#>참여활동</span>
-							<div id="act_submenu" class="submenu layerbox"
-								style="display: none;">
-								<div class="pin pin_top"></div>
-								<table>
-									<thead>
-										<tr>
-											<th class="study"><span class="inner">공동공부</span></th>
-											<th class=marking><span class="inner">봤어요</span> <span
-												class="subtitle"> 누적봤어요 <span class="count">1</span>번
-											</span></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="study">
-												<div id="p_study_nest" class="scrollbox">
-													<menu class="menu">
-														<li><a href="#">듣고있는 것</a>
-															<div class="archieved">
-																<span class="percentage">&nbsp; 15%</span> <span
-																	class="graph"> <span class="bar"
-																	style="width: 15%;"></span>
-																</span>
-															</div></li>
-														<li><a href="#">듣고있는 것</a>
-															<div class="archieved">
-																<span class="percentage">50%</span> <span class="graph">
-																	<span class="bar" style="width: 50%;"></span>
-																</span>
-															</div></li>
-													</menu>
-												</div>
-											</td>
-											<td class="marking">
-												<div id="p_marking_nest" class=scrollbox>
-													<menu class="menu2">
-														<li><a href="#">듣고있는것의 코스이름</a></li>
-														<li><a href="#">듣고있는것의 코스이름</a></li>
-													</menu>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div></li>
-						<li id="c"><span class="line2" href=#>닉네임</span>
-							<div id="niName_submenu" class="submenu layerbox"
-								style="display: none;">
-								<div class="pin pin_top"></div>
-								<div class="table">
-									<menu>
-										<li><a href="boardtopicmain.jsp">관리자</a></li>
-										<li><a href="#">로그아웃</a></li>
-									</menu>
-								</div>
-							</div></li>
+						<li><a class="line1" href="Login.jsp">Login</span></a></li>
 					</ul>
 				</nav>
 			</div>
 			<div class="title_main">
 				<p class="title1">
-					<!-- <a href="webmaster.jsp">웹 마스터 1</a> -->
-					<%
-						if (rs.next()) {
-									c_title = rs.getString("c_title");
-					%>
-					<a href="webmaster.jsp?c_idx=<%=rs.getString("c_idx")%>"><%=c_title%>
-					</a>
-					<%
-						}
-					pstmt.close();
-					conn.close();
-				}
-				} catch (Exception e) {
-				out.println(e);
-				}
-					%>
+					<a href="webmaster.jsp">웹 마스터 1</a>
 				</p>
 				<!-- 줄간격 해야함 -->
-				<p class="title2">&nbsp;</p>
+				<p class="title2">Web Master</p>
 			</div>
 			<nav class="main_nav1 menubar">
 				<div class="course2">
@@ -179,7 +47,8 @@
 								<a class=" line3" href="webmaster_side.jsp">프론트엔드 1-1</a>
 							</div>
 							<div id="1" class="sub_nav depth_1"
-								style="position: absolute; width: 199px; display: none;" loaded="true">
+								style="position: absolute; width: 199px; display: none;"
+								loaded="true">
 								<div class="pin"></div>
 								<ul class="sub_nav">
 									<li>
@@ -423,4 +292,5 @@
 		</div>
 	</div>
 </body>
+
 </html>

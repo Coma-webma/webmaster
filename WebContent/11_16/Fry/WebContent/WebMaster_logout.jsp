@@ -3,22 +3,20 @@
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<%
-	
-%>
 <!DOCTYPE html>
 <html>
 
 <head>
-	<link href="css/webmaster.css" rel="stylesheet" type="text/css">
-	<link href="css/webtop.css" rel="stylesheet" type="text/css">
-	<link href="css/webtopmenu.css" rel="stylesheet" type="text/css">
-	<link href="css/font.css" rel="stylesheet" type="text/css">
-	<link href="css/course_all.css" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="jquery/webmenu.js"></script>
-	<meta charset="UTF-8">
-	<title>웹 마스터</title>
+<link href="css/webmaster.css" rel="stylesheet" type="text/css">
+<link href="css/webtop.css" rel="stylesheet" type="text/css">
+<link href="css/webtopmenu.css" rel="stylesheet" type="text/css">
+<link href="css/font.css" rel="stylesheet" type="text/css">
+<link href="css/course_all.css" rel="stylesheet" type="text/css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="jquery/webmenu.js"></script>
+<meta charset="UTF-8">
+<title>웹 마스터</title>
 </head>
 
 <body>
@@ -34,13 +32,16 @@
 				<nav class="right_nav1">
 					<ul class="topmenu">
 						<li><a href="dec.jsp" class="line1"
-								onclick="popup(this.href,620,500,'scroll'); return false;">신고하기</a></li>
+							onclick="popup(this.href,620,500,'scroll'); return false;">신고하기</a></li>
 						<li><a class="line1" href="Login.jsp">Login</span></a></li>
 					</ul>
 				</nav>
 			</div>
 			<div class="title_main">
-				<p class="title1"><a href="WebMaster_logout.jsp">웹 마스터 1</a></p><!-- 줄간격 해야함 -->
+				<p class="title1">
+					<a href="WebMaster_logout.jsp">웹 마스터 1</a>
+				</p>
+				<!-- 줄간격 해야함 -->
 				<p class="title2">Web Master</p>
 			</div>
 			<nav class="main_nav1 menubar">
@@ -48,15 +49,16 @@
 					<ul class="topmenu1">
 						<li id="course1-1">
 							<div class="label">
-								<a class=" line3" href="webmaster_side.html">프론트엔드 1-1</a>
+								<a class=" line3" href="webmaster_side.jsp">프론트엔드 1-1</a>
 							</div>
-							<div id="1" class="sub_nav depth_1" style="position:absolute; width: 199px; display: none;"
+							<div id="1" class="sub_nav depth_1"
+								style="position: absolute; width: 199px; display: none;"
 								loaded="true">
 								<div class="pin"></div>
 								<ul class="sub_nav">
 									<li>
 										<div class="label">
-											<a href="webmaster_side.html">HTML 1-1-1</a>
+											<a href="webmaster_side.jsp">HTML 1-1-1</a>
 										</div>
 										<div class="sub_nav depth_2">
 											<ul class="sub_nav">
@@ -75,7 +77,8 @@
 									</li>
 									<li>
 										<div class="label">
-											<a href="#">CSS 1-1-2</a></div>
+											<a href="#">CSS 1-1-2</a>
+										</div>
 									</li>
 									<li>
 										<div class="label">
@@ -87,11 +90,13 @@
 									</li>
 									<li>
 										<div class="label">
-											<a href="#">메뉴1-5</a></div>
+											<a href="#">메뉴1-5</a>
+										</div>
 									</li>
 									<li>
 										<div class="label">
-											<a href="#">메뉴1-6</a></div>
+											<a href="#">메뉴1-6</a>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -107,7 +112,7 @@
 		</header>
 	</div>
 	<!-- 전체 메뉴 수정 부분  -->
-	<div id="all_menus" class="registered_layer" style="display:none;">
+	<div id="all_menus" class="registered_layer" style="display: none;">
 		<div class="pin2"></div>
 		<div class="wrapper3">
 			<hgroup>
@@ -117,46 +122,46 @@
 			<div class="section">
 				<div class="wrapper">
 					<div class="group">
-						<div class="public course_title"><a href="">WEB<span class=""></span></a></div>
+						<div class="public course_title">
+							<a href="">WEB<span class=""></span></a>
+						</div>
 						<ul class="sub_nav">
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB1 - HTML & Internet
-										<span></span>
+									<a class="courselink" href="">WEB1 - HTML & Internet <span></span>
 									</a>
 								</div>
 							</li>
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB2 - CSS
-										<span></span>
+									<a class="courselink" href="">WEB2 - CSS <span></span>
 									</a>
 								</div>
 							</li>
 						</ul>
-					</div><!-- 코스1_1 안에있는것들-->
+					</div>
+					<!-- 코스1_1 안에있는것들-->
 					<div class="group">
-						<div class="public course_title"><a href="">WEB<span class=""></span></a></div>
+						<div class="public course_title">
+							<a href="">WEB<span class=""></span></a>
+						</div>
 						<ul class="sub_nav">
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB1 - HTML & Internet
-										<span></span>
+									<a class="courselink" href="">WEB1 - HTML & Internet <span></span>
 									</a>
 								</div>
 								<div class="sub_nav depth_2 ">
 									<ul class="sub_nav">
 										<li>
 											<div class="label public">
-												<a class="courselink" href="">Ajax
-													<span></span>
+												<a class="courselink" href="">Ajax <span></span>
 												</a>
 											</div>
 										</li>
 										<li>
 											<div class="label public">
-												<a class="courselink" href="">Login
-													<span></span>
+												<a class="courselink" href="">Login <span></span>
 												</a>
 											</div>
 										</li>
@@ -165,43 +170,37 @@
 							</li>
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB2 - CSS
-										<span></span>
+									<a class="courselink" href="">WEB2 - CSS <span></span>
 									</a>
 								</div>
 							</li>
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB2 - CSS
-										<span></span>
+									<a class="courselink" href="">WEB2 - CSS <span></span>
 									</a>
 								</div>
 							</li>
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB2 - CSS
-										<span></span>
+									<a class="courselink" href="">WEB2 - CSS <span></span>
 									</a>
 								</div>
 							</li>
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB2 - CSS
-										<span></span>
+									<a class="courselink" href="">WEB2 - CSS <span></span>
 									</a>
 								</div>
 							</li>
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB2 - CSS
-										<span></span>
+									<a class="courselink" href="">WEB2 - CSS <span></span>
 									</a>
 								</div>
 							</li>
 							<li>
 								<div class="label public">
-									<a class="courselink" href="">WEB2 - CSS
-										<span></span>
+									<a class="courselink" href="">WEB2 - CSS <span></span>
 									</a>
 								</div>
 							</li>
@@ -215,9 +214,7 @@
 
 	<div class="dir">
 		<div class="dir_main">
-			<span id="breadcrumb_line">
-				WebMaster
-				<span class="divider">></span>
+			<span id="breadcrumb_line"> WebMaster <span class="divider">></span>
 				프론트엔드 1-1
 			</span>
 
@@ -226,8 +223,10 @@
 	<div class="middle">
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
-		<p style="text-align:center"><img alt="" height="150"
-				src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5641.png" width="150" />
+		<p style="text-align: center">
+			<img alt="" height="150"
+				src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/course/1/5641.png"
+				width="150" />
 		</p>
 		<p style="text-align: center;">hello world</p>
 		<p style="text-align: center;">&nbsp;</p>
@@ -235,15 +234,21 @@
 		<div class="revious_next">
 			<div class="revious_next_right">
 				<div class="revious">
-					<p class="back"><a href=#>◀ 이전</a></p>
+					<p class="back">
+						<a href=#>◀ 이전</a>
+					</p>
 				</div>
 				<div class="next">
-					<p class="back"><a href=#>다음 ▶</a></p>
+					<p class="back">
+						<a href=#>다음 ▶</a>
+					</p>
 				</div>
 			</div>
 		</div>
 		<div class="comment1">
-			<div class="comment1_1"><img src="img/pro.png"></div>
+			<div class="comment1_1">
+				<img src="img/pro.png">
+			</div>
 			<div class="comment1_2">
 				<textarea></textarea>
 			</div>
@@ -256,19 +261,16 @@
 		<ol id="comment_list">
 			<li id="00">
 				<div class="comment2">
-					<div class="comment2_1"><img src="img/pro.png"></div>
-					<div class="comment2_2">
-						닉네임
+					<div class="comment2_1">
+						<img src="img/pro.png">
 					</div>
-					<div class="comment2_3">
-						2019-10-29
-					</div>
+					<div class="comment2_2">닉네임</div>
+					<div class="comment2_3">2019-10-29</div>
 					<div class="comment2_4">
 						댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~댓글입니다~
 					</div>
 					<div class="com_buttons" style="display: block;">
-						<a class="icon reply" href="#">
-							<span class="ico ico_reply"></span>
+						<a class="icon reply" href="#"> <span class="ico ico_reply"></span>
 							답글
 						</a>
 					</div>
@@ -276,22 +278,17 @@
 			</li>
 			<li id="01">
 				<div class="comment2">
-					<div class="comment2_1"><img src="img/pro.png"></div>
-					<div class="comment2_2">
-						닉네임dd
+					<div class="comment2_1">
+						<img src="img/pro.png">
 					</div>
-					<div class="comment2_3">
-						2019-10-29
-					</div>
+					<div class="comment2_2">닉네임dd</div>
+					<div class="comment2_3">2019-10-29</div>
 					<div class="com_buttons" style="display: block;">
-						<a class="icon reply" href="#">
-							<span class="ico ico_reply"></span>
+						<a class="icon reply" href="#"> <span class="ico ico_reply"></span>
 							답글
 						</a>
 					</div>
-					<div class="comment2_4">
-						댓글입니다~
-					</div>
+					<div class="comment2_4">댓글입니다~</div>
 				</div>
 			</li>
 		</ol>

@@ -188,7 +188,6 @@
                     </dt>
                     <dd class="dd1">
                         <label><input type="checkbox" value="1">오픈 라이센스 사용에 동의합니다.</label>
-
                     </dd>
                 </dl>
                 <div class="btn_select">

@@ -1,11 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8" import="java.sql.*"%>
-<%
-	request.setCharacterEncoding("utf-8");
-%>
-<%
-	
-%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <link href="css/dec.css" rel="stylesheet" type="text/css">
 <html lang="ko">
@@ -15,7 +9,7 @@
 </head>
 
 <body>
-    <h2>★신고하기★</h2>
+    <h2>신고하기</h2>
     <div class="container">
         <form action="">
             <div class="row">
@@ -32,14 +26,6 @@
                 </div>
                 <div class="col-75">
                     <input type="text" id="name" name="name" placeholder="신고합니다!!">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">신고대상</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lname" placeholder="신고대상(이메일 or 닉네임)">
                 </div>
             </div>
             <div class="row">
