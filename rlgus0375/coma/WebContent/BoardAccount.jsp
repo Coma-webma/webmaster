@@ -253,7 +253,7 @@ BoardAccount 페이지를 위해 해야할 것
 					</div>
 	     			<div class="btn_select">
                         <div class="btn_select2">
-                            <button input type="submit" class="btn save" value="수정완료" onclick="sendit()">저장</button>
+                            <button type="button" class="btn save" value="수정완료" onclick="sendit()">저장</button>
 						</div> 
 					</div>
 				</form>
