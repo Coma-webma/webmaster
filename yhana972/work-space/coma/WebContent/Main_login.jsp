@@ -8,6 +8,7 @@
 	String u_nickname = "";
 	if (session.getAttribute("u_email") != null) {
 		u_email = (String) session.getAttribute("u_email"); // 실제 로그인한 아이디가 저장되어 있습니다.
+		System.out.println(u_email);
 	}
 	Connection conn = null;
 	String sql = "";
