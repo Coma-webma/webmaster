@@ -84,7 +84,7 @@
 				</p>
 			</hgroup>
 			<ul id="left_nav">
-				<li id="to_home"><a href="../logout/Main_logout.jsp">COMA</a></li>
+				<li id="to_home"><a href="../logout/index.jsp">COMA</a></li>
 			</ul>
 		</header>
 	</div>
@@ -109,7 +109,7 @@
 							<p>혹시, 못 받으셨다면 받은 편지함을 확인해보세요. :)</p>
 						</div>
 						<div class="footer">
-							<a class="a" href="../logout/Main_logout.jsp">홈으로</a> | <a class="a"
+							<a class="a" href="../logout/index.jsp">홈으로</a> | <a class="a"
 								href="Login.jsp">로그인</a>
 						</div>
 					</div>

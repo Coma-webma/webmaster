@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="header">
-		<a class="line1" href="../member/Login.jsp?jsp=Main_logout.jsp">Login</a>
+		<a class="line1" href="../member/Login.jsp?jsp=index.jsp">Login</a>
 	</div>
 	<table class="main">
 

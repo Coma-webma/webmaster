@@ -45,7 +45,7 @@
 <body>
 	<div class="header">
 		<a class="line1" href="../board/boardAccount.jsp?u_email=<%= u_email%>"><%=u_nickname%> <span>님</span></a> <a
-			class="line1" href="../logout/Main_logout.jsp">Logout</a>
+			class="line1" href="../logout/index.jsp">Logout</a>
 	</div>
 	<table class="main">
 

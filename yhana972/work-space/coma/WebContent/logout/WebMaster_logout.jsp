@@ -27,7 +27,7 @@
 			<div>
 				<nav class="left_nav1">
 					<ul class="topmenu">
-						<li id="to_home"><a class="mainline" href="Main_logout.jsp">COMA</a></li>
+						<li id="to_home"><a class="mainline" href="index.jsp">COMA</a></li>
 						<li id="course_allview"><a class="img" href=#>전체보기</a></li>
 					</ul>
 				</nav>

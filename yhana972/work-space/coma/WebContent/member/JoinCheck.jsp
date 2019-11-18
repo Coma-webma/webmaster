@@ -56,7 +56,7 @@
             </hgroup>
             <ul id="left_nav">
                 <li id="to_home">
-                    <a href="Main_logout.jsp">COMA</a>
+                    <a href="index.jsp">COMA</a>
                 </li>
             </ul>
         </header>
@@ -73,7 +73,7 @@
                                 <p>회원 가입 완료!<br></p>
                         </div>
                         <div class="footer">
-                            <a class="a" href="../logout/Main_logout.jsp">홈으로</a>
+                            <a class="a" href="../logout/index.jsp">홈으로</a>
                             |
                             <a class="a" href="Login.jsp">로그인</a>
                         </div>

@@ -7,7 +7,7 @@
 	String check = request.getParameter("check");
 	String jsp = request.getParameter("jsp");
 	if(jsp!=null){
-		if(jsp.equals("Main_logout.jsp")) jsp = "../login/Main_login.jsp";
+		if(jsp.equals("index.jsp")) jsp = "../login/Main_login.jsp";
 		if(jsp.equals("WebMaster_logout.jsp")) jsp = "../login/WebMaster_login.jsp";
 		if(jsp.equals("WebMasterSide_logout.jsp")) jsp = "../login/WebMasterSide_login.jsp";
 	}else{
@@ -32,7 +32,7 @@
 				<p><a class="title" href>로그인</a></p>
 			</hgroup>
 			<ul id="left_nav">
-				<li id="to_home"><a href="../logout/Main_logout.jsp">COMA</a></li>
+				<li id="to_home"><a href="../logout/index.jsp">COMA</a></li>
 			</ul>
 		</header>
 	</div>
