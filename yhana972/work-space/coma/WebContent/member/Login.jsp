@@ -6,7 +6,6 @@
 	request.setCharacterEncoding("utf-8"); 
 	String check = request.getParameter("check");
 	String jsp = request.getParameter("jsp");
-	System.out.println("++++"+jsp);
 	if(jsp!=null){
 		if(jsp.equals("Main_logout.jsp")) jsp = "../login/Main_login.jsp";
 		if(jsp.equals("WebMaster_logout.jsp")) jsp = "../login/WebMaster_login.jsp";

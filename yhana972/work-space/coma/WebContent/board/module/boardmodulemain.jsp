@@ -5,8 +5,12 @@
 	request.setCharacterEncoding("UTF-8"); // 	request 클라이언트 -> 서버
 	String m_idx = "";
 	String m_title = "";
+	String u_email = request.getParameter("u_email");
+	System.out.println(u_email);
+	
 	if (request.getParameter("m_idx") != null) {
 		m_idx = request.getParameter("m_idx");
+		
 	}
 
 	Connection conn = null; // db연결 시작
@@ -39,15 +43,108 @@
 		<div>
 			<nav class="admin_left_nav">
 				<ul class="topmenu">
-					<li><a class=line1 href="../../login/Main_login.jsp">COMA</a></li>
-					<li><a class=line2 href=#>전체메뉴</a></li>
+					<li id="to_home"><a class="mainline"
+						href="../../login/Main_login.jsp?u_email=<%=u_email%>">COMA</a></li>
 				</ul>
 			</nav>
 			<nav class="admin_right_nav">
 				<ul class="topmenu">
-					<li><a class=line1 href=#>내컨텐츠</a></li>
-					<li><a class=line1 href=#>참여활동</a></li>
-					<li><a class=line2 href=#>닉네임</a></li>
+					<li id="a"><span class="line1">내컨텐츠</span>
+						<div id="mycontent_submenu" class="submenu layerbox"
+							style="display: none;">
+							<div class="pin pin_top"></div>
+							<table>
+								<thead>
+									<tr>
+										<th class="course"><span class="inner">코스</span>
+											<div class="controls">
+												<a class="setting" href="">설정</a> <a class="add" href="">추가</a>
+											</div></th>
+										<th class="module"><span class="inner">모듈</span>
+											<div class="controls">
+												<a class="setting" href="">설정</a> <a class="add" href="">추가</a>
+											</div></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="course">
+											<div id="p_course_nest" class="scrollbox">
+												<ul>
+													<li><a href="">코스1</a></li>
+												</ul>
+											</div>
+										</td>
+										<td class="module">
+											<div id="p_module_nest" class="scrollbox">
+												<div class="divider">소유중인 모듈</div>
+												<menu class="menu3">
+													<li><a href="">모듈 2</a></li>
+													<li><a href="">모듈 2</a></li>
+												</menu>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div></li>
+					<li id="b"><span class="line1" href=#>참여활동</span>
+						<div id="act_submenu" class="submenu layerbox"
+							style="display: none;">
+							<div class="pin pin_top"></div>
+							<table>
+								<thead>
+									<tr>
+										<th class="study"><span class="inner">공동공부</span></th>
+										<th class=marking><span class="inner">봤어요</span> <span
+											class="subtitle"> 누적봤어요 <span class="count">1</span>번
+										</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="study">
+											<div id="p_study_nest" class="scrollbox">
+												<menu class="menu">
+													<li><a href="#">듣고있는 것</a>
+														<div class="archieved">
+															<span class="percentage">&nbsp; 15%</span> <span
+																class="graph"> <span class="bar"
+																style="width: 15%;"></span>
+															</span>
+														</div></li>
+													<li><a href="#">듣고있는 것</a>
+														<div class="archieved">
+															<span class="percentage">50%</span> <span class="graph">
+																<span class="bar" style="width: 50%;"></span>
+															</span>
+														</div></li>
+												</menu>
+											</div>
+										</td>
+										<td class="marking">
+											<div id="p_marking_nest" class=scrollbox>
+												<menu class="menu2">
+													<li><a href="#">듣고있는것의 코스이름</a></li>
+													<li><a href="#">듣고있는것의 코스이름</a></li>
+												</menu>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div></li>
+					<li id="c"><span class="line2" href=#>닉네임</span>
+						<div id="niName_submenu" class="submenu layerbox"
+							style="display: none;">
+							<div class="pin pin_top"></div>
+							<div class="table">
+								<menu>
+									<li><a href="boardtopicmain.html">관리자</a></li>
+									<li><a href="#">로그아웃</a></li>
+								</menu>
+							</div>
+						</div></li>
 				</ul>
 			</nav>
 		</div>

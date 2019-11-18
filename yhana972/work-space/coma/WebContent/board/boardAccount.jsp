@@ -10,6 +10,21 @@
 	if (session.getAttribute("u_email") != null) {
 		u_email = (String) session.getAttribute("u_email"); // 실제 로그인한 아이디가 저장되어 있습니다.
 	}
+
+	Connection conn = null;
+	String sql = "";
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	try {
+		Class.forName("org.mariadb.jdbc.Driver");
+		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/javatest", "root", "1234");
+		if (conn != null) {
+			//out.println("DB연결 성공!!");
+			sql = "SELECT * FROM user WHERE u_email = ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, u_email);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
 %>
 <!DOCTYPE html>
 <html>
@@ -118,13 +133,13 @@
 								</tbody>
 							</table>
 						</div></li>
-					<li id="c"><span class="line2" href=#>닉네임</span>
+					<li id="c"><span class="line2" href="#"><%=rs.getString("u_nickname")%></span>
 						<div id="niName_submenu" class="submenu layerbox"
 							style="display: none;">
 							<div class="pin pin_top"></div>
 							<div class="table">
 								<menu>
-									<li><a href="/module/boardmodulemain.jsp?<%=u_email%>">관리자</a></li>
+									<li><a href="module/boardmodulemain.jsp?<%=u_email%>">관리자</a></li>
 									<li><a href="../logout/Main_logout.jsp">로그아웃</a></li>
 								</menu>
 							</div>
@@ -161,7 +176,7 @@
 					<div class="edit_box">
 						<dl>
 							<dt>이메일</dt>
-							<dd><%=u_email %></dd>
+							<dd><%=u_email%></dd>
 							<!--사용자이메일이메일 %>-->
 						</dl>
 						<dl>
@@ -169,7 +184,7 @@
 								<label>닉네임</label>
 							</dt>
 							<dd>
-								<input type="text" name="U_Nicname" value="닉네임">
+								<input type="text" name="U_Nicname" value="<%=rs.getString("u_nickname")%>">
 							</dd>
 							<!--사용자닉네임닉네임 %>-->
 						</dl>
@@ -202,7 +217,7 @@
 								<label>자기소개</label>
 							</dt>
 							<dd>
-								<textarea name="U_into"></textarea>
+								<textarea name="U_into"><%=rs.getString("u_info") %></textarea>
 							</dd>
 						</dl>
 						<dl>
@@ -246,3 +261,13 @@
 </body>
 
 </html>
+<%
+	}
+		}
+		pstmt.close();
+		conn.close();
+	} catch (Exception e) {
+		out.println(e);
+	}
+%>
+%>
