@@ -1,15 +1,28 @@
 *{
     margin : 0;
     padding: 0;
-  
 }
-html, body,nav{
-    height: 100%;
-    min-height: 100%;
-    
+.table1{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    width:970px;
+    height:50px;
+}
+.caption1{
+    text-align: left;
+    padding:40px 30px;
+    padding-left:20px;
+    float:left;
+}
+
+.topmenu li ul{
+    display:none;
+}
+.topmenu li:hover ul{
+    display:block;
 }
 header{
-    width: 100%;
+    width:100%;
     height:55px;
     background-color: #34495e;
 }
@@ -17,9 +30,7 @@ a {
 text-decoration: none;
 color:#ccc;
 }
-li {
-    list-style-type: none;
-}
+
 a.line1{
 border-right: 1px solid #5f7b97;
 position: relative;
@@ -29,7 +40,6 @@ padding: 0px 20px;
 a.line2{
 position: relative;
 padding: 0px 20px;
-
 }
 header div nav ul.topmenu{
 margin-top: 5px;
@@ -51,13 +61,13 @@ display:inline-block;
 color:white;
 margin:5px 0px;
 }
-
 .admin_right_nav {
 position: absolute;
 right:20px;
 display:block;
 top:1px;
 }
+
 .admin_right_nav li {
 display:inline-block;
 color:white;
@@ -65,7 +75,7 @@ margin:5px 0px;
 }
 div#contant nav#main{
 width: 255px;
-height: 65px;
+height: 730px;
 background-color: #213245;
 padding: 0 20px;
 position: absolute;
@@ -76,19 +86,31 @@ box-sizing: border-box;
 }
 .admin_menu{
 margin:auto;
-font-size: 18px;
+font-size: 16px;
 list-style: none;
+padding-top:40px;
+padding-bottom:60px;
 }
 .menu_name{
 position: relative;
 display: block;
 line-height: 60px;
-width: 70px;
+width: 200px;
 height: 65px;
 color:#ccc;
-float:left;
-text-align: center;
+text-align: left;
+font-size:1.2em;
 }
+.menu_name1{
+    position: relative;
+    display: block;
+    line-height: 60px;
+    width: 200px;
+    height: 65px;
+    color: #35ac68;
+    text-align: left;
+    font-size:1.2em;
+ }
 .menu_all{
 width:255px;
 height:50px;
@@ -120,9 +142,6 @@ margin: 13px 0px 0px 0px;
 cursor: pointer;
 width: 35px;
 }
-li a.active span{
-color: #3c9 ;
-}
 select.sel{
  background-color: #bbb;
  color: white;
@@ -133,28 +152,6 @@ select.sel{
  width: 70px;
 }
 li a:hover:not(.active) {
+background-color: #555;
 color: white;
-}
-nav#main_bar{
-position: absolute;
-width: 255px;
-height: 1500px;
-background-color: #eee;
-padding: 0 auto;
-top: 110px;
-zoom: 1;
-box-sizing: border-box;
-}
-.main_bar_all {
-    list-style: none;
-    display: block;
-}
-.main_bar_all li {
-    margin-left: 10px;
-    padding:5px;
-    color: black;
-}
-.main_bar_all li:hover{
-    background-color: #ccc;
-    color:#3c9;
 }

@@ -33,7 +33,7 @@
 				</nav>
 				<nav class="right_nav1">
 					<ul class="topmenu">
-						<li><a href="dec.jsp" class="line1"
+						<li><a href="../dec.jsp" class="line1"
 								onclick="popup(this.href,620,500,'scroll'); return false;">신고하기</a></li>
 						<li><a class="line1" href="../member/Login.jsp?jsp=WebMaster_logout.jsp">Login</span></a></li>
 					</ul>

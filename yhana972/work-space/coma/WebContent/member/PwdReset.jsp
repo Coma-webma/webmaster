@@ -23,7 +23,7 @@
 <%
 	//사용자에게 보낼 메시지를 기입합니다.
 
-	String host = "http://localhost:8001/coma/";
+	String host = "http://localhost:8001/coma/member/";
 	String from = "service.coma12@gmail.com";
 	String to = u_email;
 	String subject = "비밀번호 인증을 위한 확인 메일입니다.";

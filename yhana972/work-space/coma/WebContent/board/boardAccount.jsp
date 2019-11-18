@@ -1,34 +1,24 @@
-0<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<!-- 
-BoardAccount 페이지를 위해 해야할 것 
-1. BoardAccount.jsp에서 idx가 1인 사용자의 정보를 DB에서 꺼내와 html 부분에 뿌리기
-	1) DB 연동 
-	2) select * from user where idx=1 (idx가 1인 사람의 정보를 DB에서 가져오기)
-	3) html에 부분에 넣기 ex)이메일 부분에서  rs.getString("u_email"); 이런 식으로 넣기. 
-	4) 사용자가 계정 정보를 수정했을 경우 BoardAccoutnUpdate.jsp로 넘겨주기(저장 버튼을 누른 거면 수정한다는 의미겠죠?) //idx도 넘겨주세요. ex) response.sendRedirect("BoardAccountUpdate.jsp?idx=1");
-2. BoardAccountUpdate.jsp를 생성하여 BoardAccount.jsp에서 넘어온 정보를 DB에 업데이트 하기
-	1) DB연동
-	2-1) BoardAccount.jsp에서 넘어온 정보를 String 변수에 저장하기 ex) String u_nickname 	= request.getParameter("u_nickname"); //request 객체 : client -> server 정보들
-	2-2) BoardAccoutn.jsp에서 넘길 때 idx도 같이 넘겨줬으니 변수에 그걸 받아야겠죠? ex)String idx = request.getParameter("idx"); 콘솔에 idx를 찍으면 넘겨진 값이 찍힐 거에요(1로)
-	3) DB에 정보 업데이트 하기 ex) 	sql = "UPDATE user set u_nickname = ? where idx = ? values(?, ?)"; //idx가 1인 사용자를 수정하는 것이기 때문.
-	4) 다시 BoardAccount로 넘어가기 제대로 BoardAccount를 만드셨다면 수정된 데이터로 페이지에 뿌려지겠죠?
-	
-일단 이것만 먼저 하시고 더 추가하셔야합니다 
--->
+<%
+	String u_email = "";
+	if (session.getAttribute("u_email") != null) {
+		u_email = (String) session.getAttribute("u_email"); // 실제 로그인한 아이디가 저장되어 있습니다.
+	}
+%>
 <!DOCTYPE html>
 <html>
 <head>
-<link href="css/account1.css" rel="stylesheet" type="text/css">
-<link href="css/account.css" rel="stylesheet" type="text/css">
-<link href="css/webtopmenu.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/webmenu.js"></script>
+<link href="../css/account1.css" rel="stylesheet" type="text/css">
+<link href="../css/account.css" rel="stylesheet" type="text/css">
+<link href="../css/webtopmenu.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/webmenu.js"></script>
 <meta charset="UTF-8">
 <title>계정설정</title>
 </head>
@@ -37,7 +27,8 @@ BoardAccount 페이지를 위해 해야할 것
 		<div>
 			<nav class="admin_left_nav">
 				<ul class="topmenu">
-					<li id="to_home"><a class="mainline" href="Main.jsp">COMA</a></li>
+					<li id="to_home"><a class="mainline"
+						href="../login/Main_login.jsp?u_email=<%=u_email%>">COMA</a></li>
 				</ul>
 			</nav>
 			<nav class="admin_right_nav">
@@ -133,8 +124,8 @@ BoardAccount 페이지를 위해 해야할 것
 							<div class="pin pin_top"></div>
 							<div class="table">
 								<menu>
-									<li><a href="boardtopicmain.html">관리자</a></li>
-									<li><a href="#">로그아웃</a></li>
+									<li><a href="/module/boardmodulemain.jsp?<%=u_email%>">관리자</a></li>
+									<li><a href="../logout/Main_logout.jsp">로그아웃</a></li>
 								</menu>
 							</div>
 						</div></li>
@@ -146,10 +137,11 @@ BoardAccount 페이지를 위해 해야할 것
 		<div>
 			<nav id=main>
 				<ul class=admin_menu>
-					<li><a href="boardmodulemain.html"><span
+					<li><a href="module/boardmodulemain.jsp"><span
 							class="menu_name ">모듈</span></a></li>
-					<li><a href="boardcoursemain.html"><span class="menu_name">코스</span></a></li>
-					<li><a class="active" href="boardAccount"><span
+					<li><a href="course/boardcoursemain.jsp"><span
+							class="menu_name">코스</span></a></li>
+					<li><a class="active" href="boardAccount.jsp"><span
 							class="menu_name">계정</span></a></li>
 				</ul>
 			</nav>
@@ -169,7 +161,7 @@ BoardAccount 페이지를 위해 해야할 것
 					<div class="edit_box">
 						<dl>
 							<dt>이메일</dt>
-							<dd>@email.com</dd>
+							<dd><%=u_email %></dd>
 							<!--사용자이메일이메일 %>-->
 						</dl>
 						<dl>

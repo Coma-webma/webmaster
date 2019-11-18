@@ -22,13 +22,13 @@
 
 	if (rightCode == true) {
 		session.setAttribute("u_email", userEmail);
-		response.sendRedirect("../Main_login.jsp");
+		response.sendRedirect("../login/Main_login.jsp");
 		return;
 	} else {
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("alert('유효하지 않은 코드입니다.');");
-		script.println("location.href = 'FindPwd.jsp'");
+		script.println("location.href = '../member/FindPwd.jsp'");
 		script.println("</script>");
 		return;
 	}

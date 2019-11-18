@@ -5,6 +5,7 @@
 	String u_email = request.getParameter("u_email");
 	String u_pass = request.getParameter("u_pwd");
 	String jsp = request.getParameter("jsp");
+	System.out.println(jsp);
 	
 	Connection conn = null;
 	String sql = "";
@@ -22,8 +23,13 @@
 			rs = pstmt.executeQuery();
 			
 			if(rs.next()){
-				session.setAttribute("u_email", u_email);
-				response.sendRedirect(jsp);
+				if(u_email.equals("admin@gmail.com")){
+					session.setAttribute("u_email", u_email);
+					response.sendRedirect("../list01_02.jsp");
+				}else{
+					session.setAttribute("u_email", u_email);
+					response.sendRedirect(jsp);	
+				}
 			}else{
 				response.sendRedirect("Login.jsp?check=false");
 			}

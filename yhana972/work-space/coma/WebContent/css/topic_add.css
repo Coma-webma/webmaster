@@ -13,7 +13,7 @@ hgroup{
     height: 40px;
 }
 #img1 > h2{
-    background-image: url(../img/board/icon_title.png);
+    background-image: url(../img/icon_title.png);
     background-repeat: no-repeat;
     background-position:  2px -32px;
     padding-left: 35px;
@@ -170,7 +170,7 @@ input[type="radio" i] {
     padding: initial;
     border: initial;
 }
-fieldset#functions ul li input[type='radio']:checked+label > a{
+fieldset#functions ul li input[type='radio']:checked+label {
     color: #fff;
     background-color: #3c9;
 }

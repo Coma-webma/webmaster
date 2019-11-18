@@ -6,19 +6,20 @@
 	request.setCharacterEncoding("utf-8"); 
 	String check = request.getParameter("check");
 	String jsp = request.getParameter("jsp");
+	System.out.println("++++"+jsp);
 	if(jsp!=null){
-		if(jsp.equals("../logout/Main_logout.jsp")) jsp = "../logout/Main_login.jsp";
-		if(jsp.equals("../logout/WebMaster_logout.jsp")) jsp = "../logout/WebMaster_login.jsp";
-		if(jsp.equals("../logout/WebMasterSide_logout.jsp")) jsp = "../logout/WebMasterSide_login.jsp";
+		if(jsp.equals("Main_logout.jsp")) jsp = "../login/Main_login.jsp";
+		if(jsp.equals("WebMaster_logout.jsp")) jsp = "../login/WebMaster_login.jsp";
+		if(jsp.equals("WebMasterSide_logout.jsp")) jsp = "../login/WebMasterSide_login.jsp";
 	}else{
-		jsp = "../logout/Main_logout.jsp";
+		jsp = "../login/Main_login.jsp";
 	}
 %>
 
 <!DOCTYPE html>
 <html>
 <head>
-<link href="../css/Login.css" rel="stylesheet" type="text/css">
+<link href="../css/login_head.css" rel="stylesheet" type="text/css">
 <link href="../css/font.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../js/login.js"></script>

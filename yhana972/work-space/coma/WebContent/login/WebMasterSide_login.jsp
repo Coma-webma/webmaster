@@ -61,7 +61,7 @@
 				</nav>
 				<nav class="right_nav1">
 					<ul class="topmenu">
-						<li><a href="dec.html" class="line1"
+						<li><a href="../dec.jsp" class="line1"
 							onclick="popup(this.href,620,500,'scroll'); return false;">신고하기</a></li>
 						<li id="a"><span class="line1">내컨텐츠</span>
 							<div id="mycontent_submenu" class="submenu layerbox"
@@ -148,7 +148,7 @@
 									</tbody>
 								</table>
 							</div></li>
-						<li id="c"><span class="line2" href=#>닉네임</span>
+						<li id="c"><span class="line2" href=#><%=u_nickname%></span>
 							<div id="niName_submenu" class="submenu layerbox"
 								style="display: none;">
 								<div class="pin pin_top"></div>

@@ -41,8 +41,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="css/FindPwd.css" rel="stylesheet" type="text/css">
-<link href="css/font.css" rel="stylesheet" type="text/css">
+<link href="../css/login_head.css" rel="stylesheet" type="text/css">
+<link href="../css/font.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8">
 <title>COMA</title>
 </head>
