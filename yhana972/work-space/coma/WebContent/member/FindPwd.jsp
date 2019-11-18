@@ -26,7 +26,7 @@
 				</p>
 			</hgroup>
 			<ul id="left_nav">
-				<li id="to_home"><a href="../logout/index.jsp">COMA</a></li>
+				<li id="to_home"><a href="../index.jsp">COMA</a></li>
 			</ul>
 		</header>
 	</div>
