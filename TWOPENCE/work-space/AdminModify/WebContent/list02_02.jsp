@@ -44,9 +44,9 @@
             </nav>
         </div><!-- 관리자모드 메인 -->
         <article>
-                <hgroup>
-                   <iframe src="list02_01.jsp" style="width: 100%; height: 700px;" frameborder="0" name="if"></iframe>
-                </hgroup>     
-            </article>
+              <hgroup>
+                 <iframe src="list02_01.jsp" style="width: 100%; height: 700px;" frameborder="0" name="if"></iframe>
+              </hgroup>     
+        </article>
     </body>
 </html>
