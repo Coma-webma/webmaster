@@ -17,7 +17,7 @@
 	ResultSet rs = null;
 	try {
 		Class.forName("org.mariadb.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/javatest", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/coma", "root", "1234");
 		if (conn != null) {
 			//out.println("DB연결 성공!!");
 			sql = "SELECT * FROM user WHERE u_email = ?";

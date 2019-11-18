@@ -21,7 +21,7 @@
 
 	try {
 		Class.forName("org.mariadb.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/javatest", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/coma", "root", "1234");
 		if (conn != null) {
 			sql = "select *from course";
 			pstmt = conn.prepareStatement(sql);

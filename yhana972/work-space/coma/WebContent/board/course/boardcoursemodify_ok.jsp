@@ -22,7 +22,7 @@
 
 	try {
 		Class.forName("org.mariadb.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/javatest", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/coma", "root", "1234");
 		if (conn != null) {
 			sql = "update course set c_title=?, c_content=?, c_summary=?, c_public=? where c_idx=?";
 			pstmt = conn.prepareStatement(sql);

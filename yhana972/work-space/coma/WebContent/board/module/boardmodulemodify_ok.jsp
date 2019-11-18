@@ -29,7 +29,7 @@
 
 	try {
 		Class.forName("org.mariadb.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/javatest", "root", "1234");
+		conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/coma", "root", "1234");
 		if (conn != null) {
 			sql = "update module set m_title=?, m_content=?, m_summary=?, m_public=?, m_notice=?, m_together_title=?, m_view_title=? where m_idx=?";
 			pstmt = conn.prepareStatement(sql);

@@ -7,7 +7,7 @@
 	
 %>
 <!DOCTYPE html>
-<link href="../css/dec.css" rel="stylesheet" type="text/css">
+<link href="css/dec.css" rel="stylesheet" type="text/css">
 <html lang="ko">
 
 <head>
