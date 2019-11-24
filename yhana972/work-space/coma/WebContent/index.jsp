@@ -6,14 +6,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<link href="../css/coma.css" rel="stylesheet" type="text/css">
-<link href="../js/coma.js" rel="stylesheet" type="text/css">
+<link href="css/coma.css" rel="stylesheet" type="text/css">
+<link href="js/coma.js" rel="stylesheet" type="text/css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
 	<div class="header">
-		<a class="line1" href="../member/Login.jsp?jsp=index.jsp">Login</a>
+		<a class="line1" href="member/Login.jsp?jsp=index.jsp">Login</a>
 	</div>
 	<table class="main">
 
@@ -36,10 +36,10 @@
 				<div class="card">
 					<div>
 					<!-- c_idx로 받아와야함  -->
-						<strong id="name"><a href="../logout/WebMaster_logout.jsp">course입니다아</a></strong>
+						<strong id="name"><a href="logout/WebMaster_logout.jsp">course입니다아</a></strong>
 					</div>
 					<div class="name_card">
-						<img class="" src="../img/main/picture04.jpg""> <strong id="name">닉네임닉네임닏네임</strong>
+						<img class="" src="img/main/picture04.jpg""> <strong id="name">닉네임닉네임닏네임</strong>
 					</div>
 				</div>
 				<!--하나의창(추가시 이거가지고가기--> <!--하나의창-->
@@ -48,7 +48,7 @@
 						<strong id="name"><a href="">course입니다아</a></strong>
 					</div>
 					<div class="name_card">
-						<img class="" src="../img/main/picture04.jpg"> <strong
+						<img class="" src="img/main/picture04.jpg"> <strong
 							id="name">닉네임닉네임닏네임</strong>
 					</div>
 				</div> <!--하나의창-->
