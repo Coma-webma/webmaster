@@ -1,0 +1,190 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+article{
+    position: absolute;
+    top: 15px;
+     left: 270px;
+     width: 900px;
+}
+hgroup{
+    display: block;
+    height: 40px;
+}
+#img1 > h2{
+    background-image: url(../img/icon_title.png);
+    background-repeat: no-repeat;
+    background-position:  2px -32px;
+    padding-left: 35px;
+    
+}
+h2{
+    height: 60px;
+    line-height: 60px;
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    padding: 0px 0px 0px 45px;
+}
+section{
+    position: absolute;
+    top: 90px;
+    width: 900px;
+}
+input.title{
+    width: 750px;
+    height: 35px;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0;
+}
+#menu{
+    margin: 10px 0px;
+    width: 750px;
+    height: 720px;
+}
+dl dt label{
+    font-size: 12px;
+    vertical-align: top;
+    padding-top: 1em;
+    display: inline-block;
+    width: 100px;
+    padding:11px 0px 0px 5px;
+    cursor: pointer;
+}
+dl {
+display: block;
+margin-block-start: 10px;
+margin-block-end: 10px;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+overflow: hidden;
+}
+dt{
+    float: left;
+
+}
+dd textarea{
+    font-size: 12px;
+    height: 60px;
+    margin: 0;
+    padding: 5px;
+    width:  645px;
+    border: 1px solid #ccc;
+}
+textarea.video{
+    font-size: 13px;
+    height: 35px;
+    width: 500px;
+    margin-top: 0px ;
+    padding: 5px;
+}
+textarea{
+	 resize : none;
+}
+dd button.module{
+    background-color: white;
+    color: #666;
+    cursor: pointer;
+    border: 1px solid #d5d5d5;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 3px;
+    vertical-align: top;
+}    
+dd label{
+    font-size: 13px;
+}
+input[type="radio" ] {
+background-color: initial;
+cursor: default;
+-webkit-appearance: radio;
+box-sizing: border-box;
+margin: 3px 3px 0px 5px;
+padding: initial;
+border: initial;
+}
+dd.dd1{
+    width: 800px;
+    height: 40px;
+    margin-top: 10px;
+}   
+
+div.btn_select{
+    margin:  3em 0;
+    text-align: center;
+    border-left:  .1em solid white ;
+    width: 680px;
+}
+div.btn_select2{
+    margin: 0 2em;
+}
+button.btn{
+    width: 125px;
+    height: 45px;
+    font-size: 17px;
+    color: white;
+    background-color: #bbb;
+    border: 0;
+    cursor: pointer; 
+}
+button.save{
+    background-color: #3c9;
+}
+
+fieldset#functions{
+    width: 743px;
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    border: 0px;
+}
+fieldset#functions ul{
+  overflow: hidden;
+  list-style: none;
+}
+fieldset#functions ul li{
+    display: block;
+    float: left;
+    border-left: 1px solid #fff;
+    width: 130px;
+    background-color: #eee;
+  }
+  fieldset#functions input[type='radio'] {
+    display: none;
+}
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+fieldset#functions ul li input[type='radio']:checked+label {
+    color: #fff;
+    background-color: #3c9;
+}
+fieldset#functions ul li label {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+label {
+    cursor: pointer;
+}
